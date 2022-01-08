@@ -84,7 +84,13 @@
         <p>
             this is an ordered list<br>
             <ol>
-                <li>number 1</li>
+                <li>number 1
+                    <ul>
+                        <li>1-1</li>
+                        <li>1-2</li>
+                        <li>1-3</li>
+                    </ul>
+                </li>
                 <li>number 2</li>
                 <li>number 3</li>
             </ol>
@@ -101,6 +107,65 @@
                 <li>number 3</li>
             </ul>
         </p>
+
+        <!-- this is a table
+        border => adding a border that is X pixel thick, only affects the outside border
+        cellpadding => controls the extra space inside each cell
+        cellspaceing => controls the space between each cell-->
+        <table border = "2" cellpadding = "5" cellspacing = "0">
+            <tr> <!--table row-->
+                <th>Anime</th> <!--table header-->
+                <th>Manga</th>
+                <th>Youtube</th>
+            </tr>
+            <tr>
+                <td>Clannad</td>
+                <td>Kimetsu</td>
+                <td>Dave2d</td>
+            </tr>
+        </table><br>
+        <!-- adding "colspan" can help with managing multiple data in one header -->
+        <table border = "2" cellpadding = "5" cellspacing = "0">
+            <tr> <!--table row-->
+                <th colspan = "2">Anime</th> <!--table header-->
+                <th>Manga</th>
+                <th>Youtube</th>
+            </tr>
+            <tr>
+                <td>Clannad</td>
+                <td>Psycho-Pass</td>
+                <td>Kimetsu</td>
+                <td>Dave2d</td>
+            </tr>
+        </table><br>
+        <!-- rowspan can also be used to add a row infront -->
+        <table border = "2" cellpadding = "5" cellspacing = "0">
+            <tr> <!--table row-->
+                <th></th> <!-- added blank table header -->
+                <th colspan = "2">Anime</th> <!--table header-->
+                <th>Manga</th>
+                <th>Youtube</th>
+            </tr>
+            <tr>
+                <td rowspan = "3">Weeb</td> <!-- added rowspan here -->
+                <td>Clannad</td>
+                <td>Psycho-Pass</td>
+                <td>Kimetsu</td>
+                <td>Dave2d</td>
+            </tr>
+            <tr>
+                <td>Clannad</td>
+                <td>Psycho-Pass</td>
+                <td>Kimetsu</td>
+                <td>Dave2d</td>
+            </tr>
+            <tr>
+                <td>Clannad</td>
+                <td>Psycho-Pass</td>
+                <td>Kimetsu</td>
+                <td>Dave2d</td>
+            </tr>
+        </table>
     </body>
 
 </html>
