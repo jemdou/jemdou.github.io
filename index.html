@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+        <style>
+            .tab {
+                overflow: hidden;
+                border: 1px solid #ccc;
+                background-color: #f1f1f1;
+            }   
+
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            .tab button.active {
+                background-color: #ccc;
+            }
+
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border: 1px solid #ccc;
+                border-top: none;
+            }
+
+            img {
+                width: 100px;
+                height: auto:
+            }
+
+            td {
+                text-align:center;
+            }
+            </style>
+                    
+            <title>
+                .manhwa
+            </title>
+    </head>
+
+    <body>
+        <h2>Manga, Manhwa, and Others</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Main')" id="defaultOpen"> <b>Main</b></button>
+            <button class="tablinks" onclick="openTab(event, 'Unsure')">Unsure</button>
+            <button class="tablinks" onclick="openTab(event, 'Monday')">Monday</button>
+            <button class="tablinks" onclick="openTab(event, 'Tuesday')">Tuesday</button>
+            <button class="tablinks" onclick="openTab(event, 'Wednesday')">Wednesday</button>
+            <button class="tablinks" onclick="openTab(event, 'Thursday')">Thursday</button>
+            <button class="tablinks" onclick="openTab(event, 'Friday')">Friday</button>
+            <button class="tablinks" onclick="openTab(event, 'Saturday')">Saturday</button>
+            <button class="tablinks" onclick="openTab(event, 'Sunday')">Sunday</button>
+        </div>
+
+        <div id="Main" class="tabcontent">
+            <h3>Main</h3>
+            <p>
+                This is the main tab for the website.<br>
+                Choose a tab and find what you like.<br><br>
+                The template for the table is listed below.<br>
+            </p>
+            <table border = "2" cell padding = "5" cell spacing = "1">
+                <tr>
+                    <th>img</th>
+                    <th>name</th>
+                    <th>genre</th>
+                    <th>link</th>
+                </tr>
+                <tr>
+                    <th><img src = "test.png"></th>
+                    <th>name of whatever</th>
+                    <th>genre of whatever</th>
+                    <th>
+                        <a href = "https://jemdou.github.io"
+                        target = "_blank">
+                        link of whatever
+                        </a>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div id="Unsure" class="tabcontent">
+            <h3>Unsure</h3>
+            <table border = "2" cell padding = "2" cell spacing = "1">
+                <tr>
+                    <th>img</th>
+                    <th>name</th>
+                    <th>genre</th>
+                    <th>link</th>
+                </tr>
+                <tr>
+                    <th><img src = "tiger.png"></th>
+                    <th>호랑이 들어와요</th>
+                    <th>에피소드<br>판타지</th>
+                    <th>
+                        <a href = "https://comic.naver.com/webtoon/list?titleId=757904"
+                        target = "_blank">
+                        네이버웹툰 링크
+                        </a>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div id="Monday" class="tabcontent">
+            <h3>Monday</h3>
+        </div>
+        <div id="Tuesday" class="tabcontent">
+            <h3>Tuesday</h3>
+        </div>
+        <div id="Wednesday" class="tabcontent">
+            <h3>Wednesday</h3>
+        </div>
+        <div id="Thursday" class="tabcontent">
+            <h3>Thursday</h3>
+        </div>
+        <div id="Friday" class="tabcontent">
+            <h3>Friday</h3>
+        </div>
+        <div id="Saturday" class="tabcontent">
+            <h3>Saturday</h3>
+        </div>
+        <div id="Sunday" class="tabcontent">
+            <h3>Sunday</h3>
+        </div>
+
+
+
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for(i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for(i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";    
+            }
+
+            document.getElementById("defaultOpen").click();
+        </script>
+
+    </body>
+</html>
