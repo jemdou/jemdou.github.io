@@ -59,7 +59,7 @@ a:active {
 
 /*==========================================*/
 img {
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 
@@ -68,7 +68,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 2px;
+    padding: 1px;
     text-align: center;
     font-size: 14px;
 }
