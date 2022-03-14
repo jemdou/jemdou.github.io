@@ -27,7 +27,7 @@
             3-2. After entering your sentence, press 'Enter', and results will show<br>
         </p>
         <input type="text" id="input" size="80" onkeyup="if (event.keyCode == 13) document.getElementById('btn').click()"><br>
-        <button id="clr_btn" onclick="clearMessage()" onkeyup="if (event.keyCode == 13) document.getElementById('clr_btn').click()">Clear</button><br>
+        <button id="clr_btn" onclick="clearMessage()" onkeydown="if (event.keyCode == 13) document.getElementById('clr_btn').click()">Clear</button><br>
         <button id="btn" onclick="displayMessage()" >Enter</button><br><br>
 
         <p id="entered-input"></p><br><br>
