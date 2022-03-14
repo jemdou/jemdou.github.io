@@ -35,10 +35,10 @@ function displayMessage() {
     }
 }
 function clearMessage() {
-    focusInputBox();
     document.getElementById("input").value = "";
     document.getElementById("entered-input").innerHTML = "";
     document.getElementById("result-text").innerHTML = "";
+    focusInputBox();
 }
 
 function focusInputBox() {
