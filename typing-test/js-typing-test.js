@@ -1,23 +1,20 @@
-let sentences = 
-[
-"this is a random sentence one",
-"this is a random sentence two"
-];
+var sentenes = [];
+sentenes[0] = "Do one thing everyday that scares you.";
+sentenes[1] = "Innovation distinguishes between a leader and a follower";
+sentenes[2] = "Freedom of speech doesn't mean freedom of consequences.";
 
-let the_sentence = "";
+var the_sentence = "";
 var input;
 
 function randomSentenceDisplay() {
-    var rnd_num = getRandomInt(sentences.length);
-    document.getElementById("random-sentence").innerHTML = sentences.length;
+    var temp_num = getRandomInt(sentenes.length);
 
-    the_sentence = sentences[rnd_num];
-
-    //document.getElementById("random-sentence").innerHTML = the_sentence;
+    the_sentence = sentenes[temp_num]
+    document.getElementById("random-sentence").innerHTML = the_sentence;
 }
 
 function getRandomInt(size) {
-    return Math.floor(Math.random() * max);
+    return Math.floor(Math.random() * size);
 }
 
 
@@ -29,4 +26,21 @@ function displayMessage() {
     else {
         document.getElementById("entered-input").innerHTML = "no input";
     }
+
+    if(input == the_sentence) {
+        document.getElementById("result-text").innerHTML = "nice";
+    }
+    else {
+        document.getElementById("result-text").innerHTML = "try again";
+    }
+}
+function clearMessage() {
+    focusInputBox();
+    document.getElementById("input").value = "";
+    document.getElementById("entered-input").innerHTML = "";
+    document.getElementById("result-text").innerHTML = "";
+}
+
+function focusInputBox() {
+    document.getElementById("input").focus();
 }
