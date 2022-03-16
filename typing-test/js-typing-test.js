@@ -36,7 +36,7 @@ function displayMessage() {
 }
 function clearMessage() {
     document.getElementById("input").value = "";
-    document.getElementById("entered-input").innerHTML = "";
+    document.getElementById("entered-input").innerHTML = "Your typed sentence will show here.";
     document.getElementById("result-text").innerHTML = "";
     focusInputBox();
 }
