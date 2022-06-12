@@ -18,6 +18,12 @@ var ipad_256 = false;
 var ipadAir_64 = false;
 var ipadAir_256 = false;
 
+var ipadPro11_128 = false;
+var ipadPro11_256 = false;
+var ipadPro13_128 = false;
+var ipadPro13_256 = false;
+
+
 
 
 
@@ -118,7 +124,94 @@ function addiphoneSE3_128() {
 }
 
 //ipad
-
+function addipad_64() {
+    if(!ipad_64) {
+        total += 44.9;
+        ipad_64 = true;
+    }
+    else {
+        total -= 44.9;
+        ipad_64 = false;
+    }
+    showResult();
+}
+function addipad_256() {
+    if(!ipad_256) {
+        total += 63.9;
+        ipad_256 = true;
+    }
+    else {
+        total -= 63.9;
+        ipad_256 = false;
+    }
+    showResult();
+}
+function addipadAir_64() {
+    if(!ipadAir_64) {
+        total += 77.9;
+        ipadAir_64 = true;
+    }
+    else {
+        total -= 77.9;
+        ipadAir_64 = false;
+    }
+    showResult();
+}
+function addipadAir_256() {
+    if(!ipadAir_256) {
+        total += 97.9;
+        ipadAir_256 = true;
+    }
+    else {
+        total -= 97.9;
+        ipadAir_256 = false;
+    }
+    showResult();
+}
+function addipadPro11_128() {
+    if(!ipadPro11_128) {
+        total += 99.9;
+        ipadPro11_128 = true;
+    }
+    else {
+        total -= 99.9;
+        ipadPro11_128 = false;
+    }
+    showResult();
+}
+function addipadPro11_256() {
+    if(!ipadPro11_256) {
+        total += 112.9;
+        ipadPro11_256 = true;
+    }
+    else {
+        total -= 112.9;
+        ipadPro11_256 = false;
+    }
+    showResult();
+}
+function addipadPro13_128() {
+    if(!ipadPro13_128) {
+        total += 137.9;
+        ipadPro13_128 = true;
+    }
+    else {
+        total -= 137.9;
+        ipadPro13_128 = false;
+    }
+    showResult();
+}
+function addipadPro13_256() {
+    if(!ipadPro13_256) {
+        total += 150.9;
+        ipadPro13_256 = true;
+    }
+    else {
+        total -= 150.9;
+        ipadPro13_256 = false;
+    }
+    showResult();
+}
 
 
 
