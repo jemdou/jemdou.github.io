@@ -3,25 +3,26 @@ var password = "asdfasdf";
 
 document.onkeypress = function(event) {
     event = (event || window.event);
-    if(event.keyCode == 123 || event.keyCode == 17 || event.keyCode == 85) { // f12 || ctrl || U
+    if(event.keyCode == 123 || (event.ctrlKey && event.keyCode === 85)) {
         alert('no u');
         return false
     }
 }
 document.onmousedown = function(event) {
     event = (event || window.event);
-    if(event.keyCode == 123 || event.keyCode == 17 || event.keyCode == 85) { // f12 || ctrl || U
+    if(event.keyCode == 123 || (event.ctrlKey && event.keyCode === 85)) {
         alert('no u');
         return false
     }
 }
 document.onkeydown = function(event) {
     event = (event || window.event);
-    if(event.keyCode == 123 || event.keyCode == 17 || event.keyCode == 85) { // f12 || ctrl || U
+    if(event.keyCode == 123 || (event.ctrlKey && event.keyCode === 85)) {
         alert('no u');
         return false
     }
 }
+
 
 document.addEventListener('contextmenu', event => event.preventDefault());
 
