@@ -1,11 +1,12 @@
 var input_text = "";
-var password = "12345678";
+var password = "asdfasdf";
 
 function theEnterButton() {
     input_text = document.getElementById("psswrd").value;
 
     if(input_text == password) {
-        window.location="\inside.html";
+        //window.location="\inside.html";
+        window.open("\inside.html",'_blank');
     }
     else {
         clearText();
