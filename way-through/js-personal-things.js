@@ -6,7 +6,10 @@ function theEnterButton() {
 
     if(input_text == password) {
         //window.location="\inside.html";
+        clearText();
+        document.getElementById("result").innerHTML = ".";
         window.open("\inside.html",'_blank');
+
     }
     else {
         clearText();
