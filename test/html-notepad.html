@@ -1,26 +1,176 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
-    
-        <link rel="stylesheet" type="text/css" href="css-notepad.css">
-        <script src="js-notepad.js"></script>
 
-        <title>
-            notepad
-        </title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
 
-    <body>
-        <h2>random notepad</h2>
-        <hr> <!-- horizontal rule -->
-        <hr> <!-- horizontal rule -->
-        <h4><u>stuff to buy</u></h4>
-        macbook air m1 (base model + ram 16gb, storage 512gb) || $1399 // 193만원<br>
-        macbook air m2 (base model + ram 16gb, storage 512gb) || $1599 // 226만원<br> 
-        final cut pro || $299.99 // 36.9만원<br>
-        logic pro || $199.99 // 24.9만원 <br>
-        
-    </body>
+    <link rel="stylesheet" type="text/css" href="css-notepad.css">
+    <script src="js-notepad.js"></script>
+
+    <title>
+        notepad
+    </title>
+</head>
+
+<body>
+    <h2>random notepad</h2>
+    <hr> <!-- horizontal rule -->
+    <hr> <!-- horizontal rule -->
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Main')" id="defaultOpen"> <b>Main</b></Main></button>
+        <button class="tablinks" onclick="openTab(event, 'Buy')">Buy</button>
+        <button class="tablinks" onclick="openTab(event, 'Program')">Program</button>
+    </div>
+
+    <div id="Main" class="tabcontent">
+        <br>
+        click on a tab to see its contents<br>
+        <br>
+
+    </div>
+
+    <div id="Buy" class="tabcontent">
+        <h4><u>stuff to buy (items)</u></h4>
+        <b>macbook air m1</b> (base model + ram 16gb)<br>
+        <a href="https://www.apple.com/shop/buy-mac/macbook-air/space-gray-apple-m1-chip-with-8-core-cpu-and-7-core-gpu-256gb#"
+            target="_blank">
+            apple (america) : $1399 (512gb)
+        </a><br>
+        <a href="https://www.apple.com/kr/shop/buy-mac/macbook-air/%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EA%B7%B8%EB%A0%88%EC%9D%B4-apple-m1-%EC%B9%A9(8%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-7%EC%BD%94%EC%96%B4-gpu)-256gb#"
+            target="_blank">
+            apple (korea) : 193만원 (512gb)
+        </a><br>
+        <a href="https://www.coupang.com/vp/products/4322481134?itemId=5504842876&vendorItemId=72804430326&q=%EB%A7%A5%EB%B6%81%EC%97%90%EC%96%B4+m1&itemsCount=36&searchId=c914cf71a4b1423683a44108df6f4574&rank=0&isAddedCart="
+            target="_blank">
+            coupang : 161만원 (256gb)
+        </a><br>
+        <br>
+        <b>macbook air m2</b> (base model + ram 16gb)<br>
+        <a href="https://www.apple.com/shop/buy-mac/macbook-air/midnight-apple-m2-chip-with-8-core-cpu-and-8-core-gpu-256gb#"
+            target="_blank">
+            apple (america) : $1599 (512gb)
+        </a><br>
+        <a href="https://www.apple.com/kr/shop/buy-mac/macbook-air/%EB%AF%B8%EB%93%9C%EB%82%98%EC%9D%B4%ED%8A%B8-apple-m2-%EC%B9%A9(8%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-8%EC%BD%94%EC%96%B4-gpu)-256gb#"
+            target="_blank">
+            apple (korea) : 223만원 (512gb)
+        </a><br>
+        <br>
+        <hr>
+
+        <h4><u>stuff to buy (programs)</u></h4>
+        <b>final cut pro</b> : editing program for mac only<br>
+        <a href="https://apps.apple.com/us/app/final-cut-pro/id424389933?mt=12" target="_blank">
+            apple (america) : $299.99
+        </a><br>
+        <a href="https://apps.apple.com/kr/app/final-cut-pro/id424389933?mt=12" target="_blank">
+            apple (korea) : 36.9만원
+        </a><br>
+        <br>
+        <b>logic pro</b> : music program for mac only<br>
+        <a href="https://apps.apple.com/us/app/logic-pro-x/id634148309?mt=12" target="_blank">
+            apple (america) : $199.99
+        </a><br>
+        <a href="https://apps.apple.com/kr/app/logic-pro-x/id634148309" target="_blank">
+            apple (korea) : 24.9만원
+        </a><br>
+        <br>
+        <b>parallels</b> : using windows on mac<br>
+        <a href="https://www.parallels.com/products/desktop/buy/" target="_blank">
+            parallels website (america) : $79.99 (home & student use)
+        </a><br>
+        <a href="https://www.parallels.com/kr/pd/general/?gclid=Cj0KCQjwuO6WBhDLARIsAIdeyDInQsv8ILb1EfcZl1q2WM8McyuhjoUp7zgNyyslLskDElixtQByX-4aAlnWEALw_wcB"
+            target="_blank">
+            parallels website (korea) : 9.6만원 (가정 및 학생용)
+        </a><br>
+        <br>
+    </div>
+
+    <div id="Program" class="tabcontent">
+        <br>
+        <a href="https://visualstudio.microsoft.com/ko/free-developer-offers/"
+            target="_blank">
+            visual studio (windows, mac)
+        </a><br>
+        ㄴ use for coding (needs a restart)<br>
+        <br>
+        <a href="https://code.visualstudio.com/?wt.mc_id=DX_841432"
+            target="_blank">
+            visual studio code (windows, mac, linux)
+        </a><br>
+        ㄴ use for html, css, js (no need for restart)<br>
+        <br>
+        <a href="https://citra-emu.org/download/"
+            target="_blank">
+            citra (windows, mac, linux)
+        </a><br>
+        ㄴ 3ds emulator<br>
+        <br>
+        <a href="https://rpcs3.net/download"
+            target="_blank">
+            rcps3 (windows, mac, linux)
+        </a><br>
+        ㄴ ps3 emulator<br>
+        <br>
+        <a href="https://telegram.org/"
+            target="_blank">
+            telegram (windows, mac, linux, android, ios)
+        </a><br>
+        ㄴ chat program<br>
+        <br>
+        <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko"
+            target="_blank">
+            kakaotalk (windows, mac, linux, android, ios)
+        </a><br>
+        ㄴ chat program<br>
+        <br>
+        <a href="https://discord.com/download"
+            target="_blank">
+            discord (windows, mac, linux, android, ios)
+        </a><br>
+        ㄴ chat / call program<br>
+        <br>
+        <a href="https://www.google.co.kr/chrome/?brand=YTUH&gclid=Cj0KCQjwuO6WBhDLARIsAIdeyDK9qT_5LdwpiMItOBx6aUGso26hn14UEXHGxGD1gVC2ftlby-swfeUaAr00EALw_wcB&gclsrc=aw.ds"
+            target="_blank">
+            chrome (windows, mac, linux, android, ios)
+        </a><br>
+        ㄴ main browser<br>
+        <br>
+        <a href="https://whale.naver.com/ko/download/win/"
+            target="_blank">
+            naver whale (windows, mac, linux, android, ios)
+        </a><br>
+        ㄴ another browser<br>
+        <br>
+        <a href="https://en.bandisoft.com/bandizip/"
+            target="_blank">
+            bandizip (windows)
+        </a> || 
+        <a href="https://en.bandisoft.com/bandizip.mac/"
+            target="_blank">
+            bandizip (mac)
+        </a><br>
+        ㄴ zip extractor<br>
+        <br>
+        <a href="https://potplayer.daum.net/"
+            target="_blank">
+            bandizip (windows)
+        </a><br>
+        ㄴ video player<br>
+        <br>
+
+    </div>
+
+
+
+
+    <hr>
+
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
 </html>
