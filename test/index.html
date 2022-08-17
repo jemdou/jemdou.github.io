@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- this is setting the character set to utf8 (Unicode 8)-->
+        <meta charset = "utf-8">
+
+        <!-- viewport => making it possible to display the html on all devices
+        width => setting the width of the website fit the device
+        scale => setting the scale to 1 so the default scale is "not zoomed" -->
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+
+        <!-- the title of the website/webpage
+        this is the title of the tab -->
+        <title>Test Website</title>
+    </head>
+
+    <body>
+        <!-- header 1 ~ 6
+        1. title
+        2. sub-title
+        3. section-title
+        4~6 isn't used much -->
+        <h1>Title of the Website (header 1)</h1>
+        <h2>header 2</h2>
+        <h3>header 3</h3>
+        <h4>header 4</h4>
+        <h5>header 5</h5>
+        <h6>header 6</h6>
+
+        this is a test
+        
+        <!-- this is a paragraph creating tag -->
+        <p>
+            I wanna die
+        </p>
+
+        <!-- no matter how many spaces and enters you use, html sees them as a single space.
+        so if you want a linebreak/enter, you need to use <br> -->
+        <p>
+            Dou
+            Dou
+            Dou
+            Dou<br>
+            Dou<br>
+            Dou<br>
+            Dou
+            Dou
+        </p>
+
+        <!-- by using <b>(bold), <i>(italics), <u>(underline),
+        <em>(emphasize = italics), <strong>(strong = bold) 
+        also, you can add a horizontal line using <hr> -->
+        <p>
+            <b>Dou bold</b><br>
+            <i>Dou italic</i><br>
+            <u>Dou underline</u><br>
+            <hr>
+            <em>Dou emphasize</em><br>
+            <strong>Dou strong</strong><br>
+        </p>
+
+        <!-- you can create a link through <a>(anchor) 
+        on the front of the <a>tag, use href to point to where you want the click to go
+        the target attribute chooses to open the link in the same page or a new tab 
+        new tab => _blank, not using the target attribute => same page -->
+        <p>
+            <a href = "https://jemdou.notion.site/Main-Page-9c05c6fa56204e639f1ea0c60439592b"
+            target = "_blank">this will be clickable</a>
+        </p>
+
+        <!-- you can add an image using <img>
+        src = source 
+        border = adds a border to the image-->
+        <p>
+            <img src ="https://pbs.twimg.com/profile_images/1198438854841094144/y35Fe_Jj.jpg" 
+            border = "10"><br>
+            <img src ="takodachi.png">
+        </p>
+
+        <!-- LIST TAG
+        ol => ordered list, ul => unordered list 
+        li => list item
+        you can also "nest" lists in lists-->
+        <p>
+            this is an ordered list<br>
+            <ol>
+                <li>number 1
+                    <ol>
+                        <li>1-1</li>
+                        <li>1-2</li>
+                        <li>1-3</li>
+                    </ol>
+                </li>
+                <li>number 2</li>
+                <li>number 3</li>
+            </ol>
+            this is an unordered list<br>
+            <ul>
+                <li>number 1
+                    <ul>
+                        <li>1-1</li>
+                        <li>1-2</li>
+                        <li>1-3</li>
+                    </ul>
+                </li>
+                <li>number 2</li>
+                <li>number 3</li>
+            </ul>
+        </p>
+
+        <!-- this is a table
+        border => adding a border that is X pixel thick, only affects the outside border
+        cellpadding => controls the extra space inside each cell
+        cellspaceing => controls the space between each cell-->
+        <table border = "2" cellpadding = "5" cellspacing = "0">
+            <tr> <!--table row-->
+                <th>Anime</th> <!--table header-->
+                <th>Manga</th>
+                <th>Youtube</th>
+            </tr>
+            <tr>
+                <td>Clannad</td>
+                <td>Kimetsu</td>
+                <td>Dave2d</td>
+            </tr>
+        </table><br>
+        <!-- adding "colspan" can help with managing multiple data in one header -->
+        <table border = "2" cellpadding = "5" cellspacing = "0">
+            <tr> <!--table row-->
+                <th colspan = "2">Anime</th> <!--table header-->
+                <th>Manga</th>
+                <th>Youtube</th>
+            </tr>
+            <tr>
+                <td>Clannad</td>
+                <td>Psycho-Pass</td>
+                <td>Kimetsu</td>
+                <td>Dave2d</td>
+            </tr>
+        </table><br>
+        <!-- rowspan can also be used to add a row infront -->
+        <table border = "2" cellpadding = "5" cellspacing = "0">
+            <tr> <!--table row-->
+                <th></th> <!-- added blank table header -->
+                <th colspan = "2">Anime</th> <!--table header-->
+                <th>Manga</th>
+                <th>Youtube</th>
+            </tr>
+            <tr>
+                <td rowspan = "3">Weeb</td> <!-- added rowspan here -->
+                <td>Clannad</td>
+                <td>Psycho-Pass</td>
+                <td>Kimetsu</td>
+                <td>Dave2d</td>
+            </tr>
+            <tr>
+                <td>Clannad</td>
+                <td>Psycho-Pass</td>
+                <td>Kimetsu</td>
+                <td>Dave2d</td>
+            </tr>
+            <tr>
+                <td>Clannad</td>
+                <td>Psycho-Pass</td>
+                <td>Kimetsu</td>
+                <td>Dave2d</td>
+            </tr>
+        </table>
+    </body>
+
+</html>

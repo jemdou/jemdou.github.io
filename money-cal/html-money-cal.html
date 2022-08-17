@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+    
+        <link rel="stylesheet" type="text/css" href="css-money-cal.css">
+        <script src="js-money-cal.js"></script>
+
+        <title>
+            money calculator
+        </title>
+    </head>
+
+    <body>
+        
+        <p id="head" style="font-size:30px; ">돈이 얼마나 들까요?</p>
+
+
+        <p id="info">
+            || 총 금액은 아랫쪽에 표시 될 것입니다.<br>
+            || 버튼들을 이용해 총 가격을 측정하세요. (전부 정가 기준입니다)<br>
+            || 제품들은 대부분 분류가 되어 있을 것 입니다.
+        </p>
+        <b><p id="total-cost" style="font-size:20px; ">0만원</p></b>
+
+        <p>
+            <h3>==== iPhone ====</h3>
+            <h4>--- 13 ---</h4>
+            13 mini [13.7cm, A15] || <button id="btn_iphone13_mini_128" onclick="addiphone13_mini_128()">128기가</button><br>
+            13 [15.4cm, A15] || <button id="btn_iphone13_reg_128" onclick="addiphone13_reg_128()">128기가</button><br>
+            13 pro [15.4cm, A15] || <button id="btn_iphone13_pro_128" onclick="addiphone13_pro_128()">128기가</button><br>
+            13 pro max [16.9cm, A15] || <button id="btn_iphone13_promax_128" onclick="addiphone13_promax_128()">128기가</button><br>
+
+            <h4>--- 12 ---</h4>
+            12 mini [13.7cm, A14] || <button id="btn_iphone12_mini_64" onclick="addiphone12_mini_64()">64기가</button><br>
+            12 [15.4cm, A14] || <button id="btn_iphone12_reg_64" onclick="addiphone12_reg_64()">64기가</button><br>
+
+            <h4>--- SE ---</h4>
+            SE gen3 [11.9cm, A15] || <button id="btn_iphoneSE3_64" onclick="addiphoneSE3_64()">64기가</button>  <button id="btn_iphoneSE3_128" onclick="addiphoneSE3_128()">128기가</button><br><br>
+        </p>
+
+        <p>
+            <h3>==== iPad ====</h3>
+            iPad [25.9cm, A13] || <button id="btn_ipad_64" onclick="addipad_64()">64기가</button>  <button id="btn_ipad_256" onclick="addipad_256()">256기가</button><br>
+            iPad Air [27.5cm, M1] || <button id="btn_ipadAir_64" onclick="addipadAir_64()">64기가</button>  <button id="btn_ipadAir_256" onclick="addipadAir_256()">256기가</button><br>
+            iPad Pro 11 [27.9cm, M1] || <button id="btn_ipadPro11_128" onclick="addipadPro11_128()">128기가</button>  <button id="btn_ipadPro11_256" onclick="addipadPro11_256()">256기가</button><br>
+            iPad Pro 12.9 [32.7cm, M1] || <button id="btn_ipadPro13_128" onclick="addipadPro13_128()">128기가</button>  <button id="btn_ipadPro13_256" onclick="addipadPro13_256()">256기가</button><br>
+
+        </p>
+
+        <p>
+            <h3>==== MacBook ====</h3>
+            MacBook Air
+
+        </p>
+
+    </body>
+</html>

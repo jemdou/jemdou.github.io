@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+    
+        <link rel="stylesheet" type="text/css" href="css-game-1.css">
+        <script src="js-game-1.js"></script>
+
+        <title>
+            game1
+        </title>
+    </head>
+
+    <body>
+        <h2>webgame 1</h2>
+        <button type="button" hidden id="btn_stat" onclick="showStats()"></button>
+
+        <p><b>//work in progess//</b></p>
+
+        <div>
+            <hr>
+            <p>
+                <h3>Player Stats</h3>
+                <span id="user_hp"></span> / <span id="user_maxhp"></span><br>
+                <span id="user_mana"></span> / <span id="user_maxmana"></span><br>
+                <span id="user_stamina"></span> / <span id="user_maxstamina"></span><br>
+            </p>
+            <hr>
+        </div>
+        
+
+        <p>enter a command</p>
+        <input type="text" id="input" onkeyup = "if (event.keyCode == 13) document.getElementById('btn').click()"><br>
+        <button id="btn" onclick="displayMessage()">enter</button><br><br>
+
+        <button id="btn_hp" onclick="decreaseHp()">decrease hp</button><br>
+        <button id="btn_mana" onclick="decreaseMana()">decrease mana</button><br>
+        <button id="btn_stamina" onclick="decreaseStamina()">decrease stamnina</button><br>
+
+        <p id="entered-input"></p>
+
+        <script>
+            document.getElementById("btn_stat").click();
+        </script>
+    </body>
+</html>
