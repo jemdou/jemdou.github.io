@@ -1,5 +1,4 @@
 var input_text = "";
-var password = "asdfasdf";
 
 document.onkeypress = function(event) {
     event = (event || window.event);
@@ -26,7 +25,7 @@ document.onkeydown = function(event) {
 
 document.addEventListener('contextmenu', event => event.preventDefault());
 
-
+var password = "asdfasdf";
 
 function theEnterButton() {
     input_text = document.getElementById("psswrd").value;
