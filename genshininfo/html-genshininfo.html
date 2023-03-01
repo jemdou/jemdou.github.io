@@ -8,39 +8,85 @@
         <script src="js-genshininfo.js"></script>
 
         <title>
-            info for genshin
+            genshin
         </title>
     </head>
 
     <body>
-        <h2>info for genshin impact</h2>
-        <hr> <!-- horizontal rule -->
-        <hr> <!-- horizontal rule -->
-        <h4><u>정보</u></h4>
-        <a href = "https://www.youtube.com/watch?v=HzZdEezYPR4&t=718s"
+        <div id="mainContent">
+            <h2>info for genshin impact</h2>
+            <hr> <!-- horizontal rule -->
+            <hr> <!-- horizontal rule -->
+            <h4><u>정보</u></h4>
+
+            <a href="#none" id="showWords" onclick="if(hideWords.style.display=='none') 
+            {hideWords.style.display='';showWords.innerText='- 용어 정리'}
+            else {hideWords.style.display='none';showWords.innerText='+ 용어 정리'}">
+            + 용어 정리
+            </a><br>
+            <div id="hideWords" style="display: none">
+                <hr color="e2e2e2">
+                <b>모험가 레벨 = 모험 등급 = AR</b><br>
+                <img src="genshininfo-img/ar1.png" alt="adventure_rank_one" style="height:50px">
+                <img src="genshininfo-img/ar2.png" alt="adventure_rank_two" style="height:50px"><br>
+                <hr color="e2e2e2">
+                <b>월드 레벨 = WL</b><br>
+                <img src="genshininfo-img/wl.png" alt="world_level" style="height:70px"><br>
+                (모험 등급 아래에 있음)<br>
+                모험 등급이 증가하면 월드 레벨도 올라감 / 올릴 수 있음<br>
+                <hr color="e2e2e2">
+                돌
+                
+                <hr color="e2e2e2">
+                <b>약어 / 동일 단어</b><br>
+                원충: 원소 충전<br>
+                원마: 원소 마스터리<br>
+                원소 전투 스킬 = E<br>
+                원소 폭발 = Q = 궁<br>
+                명함 = 0돌
+                풀돌 = 6돌
+
+            </div>
+            <br>
+
+            <a href = "https://www.youtube.com/watch?v=HzZdEezYPR4&t=718s"
+                target = "_blank">
+                what to do at certain Adventure Ranks (AR) (youtube, english)
+            </a><br>
+            <br>
+            <a href = "https://youtu.be/8LaNjLHiaic?t=3"
             target = "_blank">
-            what to do at certain Adventure Ranks (AR) (youtube, english)
-        </a><br>
-        <br>
-        <a href = "https://youtu.be/8LaNjLHiaic?t=3"
-        target = "_blank">
-        특정 모험랭크 별 해야할 일들 (유튜브, 한국어)
-        </a><br>
-        <br>
+            특정 모험랭크 별 해야할 일들 (유튜브, 한국어)
+            </a><br>
+            <br>
 
-        <h4><u>성유물 / artifacts</u></h4>
-        <br>
+            <h4><u>캐릭터 / characters</u></h4>
+            <a href="#none" id="showRaiden" onclick="if(hideRaiden.style.display=='none') 
+            {hideRaiden.style.display='';showRaiden.innerText='- 라이덴 쇼군 / Raiden Shogun'}
+            else {hideRaiden.style.display='none';showRaiden.innerText='+ 라이덴 쇼군 / Raiden Shogun'}">
+            + 라이덴 쇼군 / Raiden Shogun
+            </a><br>
+            <div id="hideRaiden" style="display: none">
+                <br>
+                라이덴 상세 내용<br>
+                <img src="genshininfo-img/raiden.png" alt="raiden_img" style="width:300px">
+                육성1: 원충 서포터
+            </div>
+            <br>
+            
 
-        <h4><u>"순위"</u></h4>
-        이 게임은 pve 게임이기 때문에 굳이 순위를 고를 필요가 없지만,<br>
-        정 게임을 편하게 하고 싶다면 이 순위들을 따르면 된다.<br>
-        <a href = "https://game8.co/games/Genshin-Impact/archives/297465"
-            target = "_blank">
-            ver 3.4 순위 (game8, english) - 23.02.07 작성
-        </a><br>
-        <br>
-        <hr> <!-- horizontal rule -->
+            <h4><u>성유물 / artifacts</u></h4>
+            <br>
 
-        
+            <h4><u>"순위"</u></h4>
+            이 게임은 pve 게임이기 때문에 굳이 순위를 고를 필요가 없지만,<br>
+            정 게임을 편하게 하고 싶다면 이 순위들을 따르면 된다.<br>
+            <a href = "https://game8.co/games/Genshin-Impact/archives/297465"
+                target = "_blank">
+                ver 3.4 순위 (game8, english) - 23.02.07 작성
+            </a><br>
+            <br>
+            <hr> <!-- horizontal rule -->
+        </div>
     </body>
 </html>
