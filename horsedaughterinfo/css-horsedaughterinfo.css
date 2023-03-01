@@ -17,3 +17,8 @@ a:hover {
 a:active {
     color: #FF4747
 }
+
+div {
+    width: 500px;
+    margin: auto;
+}
