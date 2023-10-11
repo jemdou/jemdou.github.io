@@ -65,7 +65,7 @@ function displayMessage() {
             document.getElementById("result-text").innerHTML = "try again";
         }
         else if(language_korean) {
-            document.getElementById("result-text").innerHTML = "다시해 시발년아";
+            document.getElementById("result-text").innerHTML = "다시해";
         }
     }
 }
