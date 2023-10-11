@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+    
+        <link rel="stylesheet" type="text/css" href="css-controllerinfo.css">
+        <script src="js-controllerinfo.js"></script>
+
+        <title>
+            controller info
+        </title>
+    </head>
+
+    <body>
+        <p id="head" style="font-size:30px; ">
+            <h2>Controller Info</h2>
+        </p>
+
+        <p id="readplz">
+            || press 'tab' and 'enter' to get a random sentence.<br>
+            || press 'tab', type the random sentence and 'enter' when you are finshed.<br>
+            || press 'tab' then 'enter' to start typing again.
+        </p>
+
+        <button id="btn_sentence" style="width: 150px; height: 30px" onclick="randomSentenceDisplay()">random sentence</button><br>
+        
+        <hr>
+
+        <p id="random-sentence">(example sentence)</p>
+        <hr>
+        <p id="entered-input">(typed sentence)</p>
+        <hr>
+        
+        <input type="text" id="input" size="80" onkeydown="if (event.keyCode == 13) document.getElementById('btn').click()"><br><br>
+        <button id="clr_btn" onclick="clearMessage()" onkeyup="if (event.keyCode == 13) document.getElementById('clr_btn').click()">clear</button><br><br>
+        <button id="btn" hidden onclick="displayMessage()" >Enter</button><br><br>
+
+        <p id="result-text">.</p><br><br>
+
+
+        <button id="korean_ui" style="width: 70px; height: 30px" onclick="changeToKoreanUI()">한국어</button>
+        <button id="english_ui" style="width: 70px; height: 30px" onclick="changeToEnglishUI()">english</button>
+
+        <script>
+            
+        </script>
+    </body>
+</html>

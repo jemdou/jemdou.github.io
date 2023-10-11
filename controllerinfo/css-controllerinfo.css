@@ -1,0 +1,19 @@
+/*===link text management===*/
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+a:link {
+    color: #00AD86
+}
+a:visited {
+    color: #00AD86
+}
+a:hover {
+    color: #AC77FF
+}
+a:active {
+    color: #FF4747
+}
