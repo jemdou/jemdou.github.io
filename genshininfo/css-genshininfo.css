@@ -3,7 +3,7 @@ a:link, a:visited {
     text-decoration: none;
 }
 a:hover, a:active {
-    text-decoration: underline;
+    text-decoration: none;
 }
 a:link {
     color: #00AD86
@@ -19,10 +19,16 @@ a:active {
 }
 
 #mainContent {
-    width: 500px;
+    width: 600px;
     margin: auto;
 }
 
 h2 {
     text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
 }

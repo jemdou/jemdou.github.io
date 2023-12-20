@@ -18,36 +18,27 @@
             <hr> <!-- horizontal rule -->
             <hr> <!-- horizontal rule -->
             <h4><u>Game Info</u></h4>
-            <a href="#none" id="showgameongoing" onclick="if(gameongoing.style.display=='none') 
-            {gameongoing.style.display='';showgameongoing.innerText='- Game Info (Ongoing)'}
-            else {gameongoing.style.display='none';showgameongoing.innerText='+ Game Info (Ongoing)'}">
-                + Game Info (Ongoing)
-            </a><br>
-            <div id="gameongoing" style="display: none">
+            <a href="#none" id="showgameongoing" onclick="toggleDiv('gameongoing','showgameongoing','1. Game Info (Ongoing)')">+ 1. Game Info (Ongoing)</a><br>
+            <div id="gameongoing" style="display: none; padding-left: 30px;" >
                 <br>
                 <a href = "genshininfo/html-genshininfo.html" target = "_self">
-                    &emsp;| 원신 정보글
+                    || 원신 정보글
                  </a><br>
                  <br>
                  <a href = "pjdv39plus/html-pjdv39plus.html" target = "_self">
-                    &emsp;| project diva mega 39 plus (Steam) info
+                    || project diva mega 39 plus (Steam) info
                  </a><br>
             </div>
             <br>
-
-            <a href="#none" id="gameoldshow" onclick="if(gameold.style.display=='none') 
-            {gameold.style.display='';gameoldshow.innerText='- Game Info (Old)'}
-            else {gameold.style.display='none';gameoldshow.innerText='+ Game Info (Old)'}">
-                + Game Info (Old)
-            </a><br>
-            <div id="gameold" style="display: none">
+            <a href="#none" id="gameoldshow" onclick="toggleDiv('gameold','gameoldshow','2. Game Info (Old)')">+ 2. Game Info (Old)</a><br>
+            <div id="gameold" style="display: none; padding-left: 30px;">
                 <br>
                 <a href = "horsedaughterinfo/html-horsedaughterinfo.html" target = "_self">
-                    &emsp;| 말딸겜 정보글
+                    || 말딸겜 정보글
                 </a><br>
                 <br>
                 <a href = "girlsfrontlineinfo/html-girlsfrontlineinfo.html" target = "_self">
-                    &emsp;| 소녀전선 정보글
+                    || 소녀전선 정보글
                 </a><br>
             </div>
             <br>
