@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+        
+        <!-- Imports(?) styles.css and jscript.js here. -->
+        <!-- Change names accordingly. -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="jscript.js"></script>
+
+        <!-- Name of tab will be written here -->
+        <title>
+            Page Title
+        </title>
+    </head>
+
+    <body>
+        <div>
+            <!-- This creates an openning and closing link(?) -->
+            <!-- Refer javascript file on how this works -->
+            <!-- Remember to change the LINK_ID -->
+            <a href="#none" id="LINK_ID" onclick="toggleDiv('DIV_ID','LINK_ID','DIV_NAME')">+ DIV_NAME</a>
+            <!-- Remember to change the DIV_ID -->
+            <span id="DIV_ID" style="display: none"><br>
+                <!-- &emsp creates a blankspace like the function of a tab -->
+                &emsp;| Content of the division 1 <br>
+                &emsp;| Content of the division 2
+            </span>
+            <br><br>
+            <!-- Opens a new page of the link -->
+            <!-- [ target ]
+                _blank : opens link in a new tab
+                _self : opens the link in the current tab -->
+            <!-- [LINK-TO-NEWPAGE]
+                a link to another website : <website address>
+                a link to another page : <folder>/<html-file> -->
+            <a href = "LINK-TO-NEWPAGE" target = "">
+                Name of the link
+            </a>
+        </div>
+    </body>
+</html>
