@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+    
+        <link rel="stylesheet" type="text/css" href="css-genshininfo-wishpuller.css">
+        <script src="js-genshininfo-wishpuller.js"></script>
+
+        <title>
+            Genshin Wish Tester
+        </title>
+    </head>
+
+    <body>
+        <div>
+            <h2>Genshin Wish Tester</h2>
+            <hr>
+            <hr>
+            <br>
+            <div id="pullbox" style="height:220px; width:480px; border:5px solid#ccc; overflow: auto; padding-left:10px; padding-top:10px">
+                이곳에 기원 기록이 나옵니다
+            </div>
+            <br>
+            <span id="pullcount">총 기원 횟수 : 0</span><br>
+            <span id="fivestarpitty">5성 천장까지의 남은 횟수 : 90</span><br>
+            <span id="fourstarpitty">4성 천장까지의 남은 횟수 : 10</span><br>
+            <br>
+
+            <button id="pullOne" onclick="newWishOne()">기원 1번</button> 
+            <button id="pullTen" onclick="newWishTen()">기원 10번</button>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <span style="float: right;">last update : 01 / 13 / 2024</span>
+        </div>
+    </body>
+</html>
+<!--
+    https://genshin.gamedot.org/?mid=board&target=view&board=tip&post=290
+    <본문>
+
+※ 4성 천장에서 5성이 나올 경우 다음 회에 4성이 뜨는 것으로 밀려남
+
+※ 4성에도 반천장, 확천장, 픽뚫 개념이 존재함
+
+----------------------------------------------------------
+
+1. 캐릭터, 상시 기원
+5성 확률
+1~73회 : 0.6%
+
+74회 : 6.6% (확률업 구간 시작)
+
+75회 : 12.6%
+
+76회 : 18.6%
+
+77회 : 24.6%
+
+...
+
+89회 : 96.6%
+
+90회 : 100% (천장)
+
+확률업 구간은 74회부터이며 확률업 구간부터는 매 회 확률이 6%만큼 증가함
+
+반천장에서 픽뚫 확률은 50%
+
+4성 확률
+1~8회 : 5.1%
+
+9회 : 56.1% (확률업 구간 시작)
+
+10회 : 100% (천장)
+
+확률업 구간은 9회부터이며 확률업 구간부터는 매 회 확률이 51%만큼 증가함
+
+반천장에서 픽뚫 확률은 50% 
+
+----------------------------------------------------------
+
+2. 무기 기원
+5성 확률
+1~62회 : 0.7%
+
+63회 : 7.7% (확률업 구간 시작)
+
+64회 : 14.7%
+
+65회 : 21.7%
+
+66회 : 28.7%
+
+...
+
+76회 : 98.7%
+
+77회 : 100% (천장) 
+
+확률업 구간은 63회부터이며 확률업 구간부터는 매 회 확률이 7%만큼 증가함
+
+무뽑의 실제 천장은 80회가 아닌 77회
+
+반천장에서 픽뚫 확률은 25%
+
+
+4성 확률
+1~7회 : 6%
+
+8회 : 66% (확률업 구간 시작)
+
+9회 : 100% (천장)
+
+확률업 구간은 8회부터이며 확률업 구간부터는 매 회 확률이 60%만큼 증가함
+
+반천장에서 픽뚫 확률은 50%
+
+----------------------------------------------------------
+
+참조
+
+https://paimon.moe/
+
+https://www.hoyolab.com/article/497840
+-->
