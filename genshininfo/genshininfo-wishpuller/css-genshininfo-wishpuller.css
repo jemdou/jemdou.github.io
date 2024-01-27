@@ -26,42 +26,42 @@ a:active {
 
 /*=== div settings ===*/
 #contents {
-    width: 700px;
+    width: 750px;
     margin: auto;
     overflow: hidden;
 }
 
 #banners {
-    width: 29%;
+    width: 30%;
     float: left;
 }
 #wish_tester {
-    width: 71%;
+    width: 70%;
     float: right;
 }
 
 #header {
-    width: 700px;
+    width: 750px;
     margin: auto;
 }
 #update-info {
-    width: 700px;
+    width: 750px;
     margin: auto;
 }
 #calculation-info {
-    width: 700px;
+    width: 750px;
     margin: auto;
 }
 
 /*=== button settings ===*/
 .pickup {
-    width: 165px;
+    width: 180px;
     height: 30px;
     text-align: center;
     margin-bottom: 3px;
 }
 .pull {
-    width: 70px;
+    width: 80px;
     text-align: center;
     margin: 3px;
 }
