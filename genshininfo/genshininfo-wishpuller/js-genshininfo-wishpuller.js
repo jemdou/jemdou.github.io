@@ -264,6 +264,19 @@ function setNames(date) {
     document.getElementById("fourstarnames").innerHTML = "4성 픽업 캐릭터 : " + currPickUpFourStar[0] + ", " + currPickUpFourStar[1] + ", " + currPickUpFourStar[2];
 }
 
+function addIntoFourStarArray() {
+    charactersFourStar.length = 0;
+    for(var i = 0; i < charactersFourStarBase.length; i++) {
+        charactersFourStar.push(charactersFourStarBase[i]);
+    }
+}
+function addIntoFiveStarArray() {
+    characterNormalFiveStar.length = 0;
+    for(var i = 0; i < characterNormalFiveStarBase.length; i++) {
+        characterNormalFiveStar.push(characterNormalFiveStarBase[i]);
+    }
+}
+
 /*=== banner functions ===*/
 function NameVersionTemplate() {
     choosePickUp = true;
@@ -286,9 +299,9 @@ function NameVersionTemplate() {
 function Raiden43() { // 4.3 후반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 39;
 
     currPickUpFiveStar = "라이덴 쇼군";
@@ -304,9 +317,9 @@ function Raiden43() { // 4.3 후반
 function Yoimiya43() { // 4.3 후반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 39;
 
     currPickUpFiveStar = "요이미야";
@@ -322,9 +335,9 @@ function Yoimiya43() { // 4.3 후반
 function Navia43() { // 4.3 전반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 38;
 
     currPickUpFiveStar = "나비아";
@@ -340,9 +353,9 @@ function Navia43() { // 4.3 전반
 function Ayaka43() { // 4.3 전반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 38;
 
     currPickUpFiveStar = "카미사토 아야카";
@@ -358,9 +371,9 @@ function Ayaka43() { // 4.3 전반
 function Cyno42() { // 4.2 후반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 38;
 
     currPickUpFiveStar = "사이노";
@@ -376,9 +389,9 @@ function Cyno42() { // 4.2 후반
 function Ayato42() { // 4.2 후반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 38;
 
     currPickUpFiveStar = "카미사토 아야토";
@@ -394,9 +407,9 @@ function Ayato42() { // 4.2 후반
 function Furina42() { // 4.2 전반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 38;
 
     currPickUpFiveStar = "푸리나";
@@ -412,9 +425,9 @@ function Furina42() { // 4.2 전반
 function Baizhu42() { // 4.2 전반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 38;
 
     currPickUpFiveStar = "백출";
@@ -430,9 +443,9 @@ function Baizhu42() { // 4.2 전반
 function Wriothesley41() { // 4.1 후반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 37;
 
     currPickUpFiveStar = "라이오슬리";
@@ -448,9 +461,9 @@ function Wriothesley41() { // 4.1 후반
 function Venti41() { // 4.1 후반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 37;
 
     currPickUpFiveStar = "벤티";
@@ -466,9 +479,9 @@ function Venti41() { // 4.1 후반
 function Hutao41() { // 4.1 전반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 37;
 
     currPickUpFiveStar = "호두";
@@ -484,9 +497,9 @@ function Hutao41() { // 4.1 전반
 function Neuvillette41() { // 4.1 전반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 37;
 
     currPickUpFiveStar = "느비예트";
@@ -502,9 +515,9 @@ function Neuvillette41() { // 4.1 전반
 function Zhongli40() { // 4.0 후반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 37;
 
     currPickUpFiveStar = "종려";
@@ -520,9 +533,9 @@ function Zhongli40() { // 4.0 후반
 function Tartaglia40() { // 4.0 후반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 37;
 
     currPickUpFiveStar = "타르탈리아";
@@ -538,9 +551,9 @@ function Tartaglia40() { // 4.0 후반
 function Yelan40() { // 4.0 전반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 36;
 
     currPickUpFiveStar = "야란";
@@ -556,9 +569,9 @@ function Yelan40() { // 4.0 전반
 function Lyney40() { // 4.0 전반
     choosePickUp = true;
 
-    characterNormalFiveStar = characterNormalFiveStarBase;
+    addIntoFiveStarArray();
     characterNormalFiveStar.length = 7;
-    charactersFourStar = charactersFourStarBase;
+    addIntoFourStarArray();
     charactersFourStar.length = 36;
 
     currPickUpFiveStar = "리니";
