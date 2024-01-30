@@ -25,31 +25,37 @@ a:active {
 }
 
 /*=== div settings ===*/
-#contents {
-    width: 750px;
+#header {
+    width: 800px;
+    margin: auto;
+}
+#content {
+    width: 800px;
     margin: auto;
     overflow: hidden;
 }
-
 #banners {
     width: 32%;
     float: left;
 }
-#wish_tester {
+#wish-tester {
     width: 68%;
     float: right;
 }
-
-#header {
-    width: 750px;
+#pull-characters {
+    width: 600px;
+    overflow: auto;
+    padding: 10px;
+    margin: auto;
+    height: 200px;
+    border:3px solid#ccc;
+}
+#calculation-info {
+    width: 800px;
     margin: auto;
 }
 #update-info {
-    width: 750px;
-    margin: auto;
-}
-#calculation-info {
-    width: 750px;
+    width: 800px;
     margin: auto;
 }
 

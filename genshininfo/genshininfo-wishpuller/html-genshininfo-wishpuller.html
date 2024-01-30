@@ -14,31 +14,37 @@
 
     <body>
         <div id="header">
-            <br>
-            <h2 style="text-align: center;">원신 뽑기 시뮬레이터</h2>
-            <hr>
-            <hr>
         </div>
-        <div id="contents">
-            <div id="banners" style="height:450px; width:210px; border:3px solid#b1b1b1; overflow: auto; padding-top:5px; text-align: center; margin-left: 10px;">
+        <div id="pull-characters">
+            이곳에 뽑은 캐릭터가 나옵니다
+        </div>
+        <br>
+        <div id="content">
+            <div id="banners" style="height:450px; width:220px; border:3px solid#b1b1b1; overflow: auto; padding-top:10px; text-align: center; margin-left: 5px;">
+                <button class="pickup" onclick="Nahida44()">4.4 전반 나히다</button><br>
+                <button class="pickup" onclick="Xianyun44()">4.4 전반 한운 ⭐️</button><br>
+                <hr>
                 <button class="pickup" onclick="Raiden43()">4.3 후반 라이덴 쇼군</button><br>
                 <button class="pickup" onclick="Yoimiya43()">4.3 후반 요이미야</button><br>
                 <button class="pickup" onclick="Ayaka43()">4.3 전반 카미사토 아야카</button><br>
                 <button class="pickup" onclick="Navia43()">4.3 전반 나비아 ⭐️</button><br>
+                <hr>
                 <button class="pickup" onclick="Cyno42()">4.2 후반 사이노</button><br>
                 <button class="pickup" onclick="Ayato42()">4.2 후반 카미사토 아야토</button><br>
                 <button class="pickup" onclick="Baizhu42()">4.2 전반 백출</button><br>
                 <button class="pickup" onclick="Furina42()">4.2 전반 푸리나 ⭐️</button><br>
+                <hr>
                 <button class="pickup" onclick="Venti41()">4.1 후반 벤티</button><br>
                 <button class="pickup" onclick="Wriothesley41()">4.1 후반 라이오슬리 ⭐️</button><br>
                 <button class="pickup" onclick="Hutao41()">4.1 전반 호두</button><br>
                 <button class="pickup" onclick="Neuvillette41()">4.1 전반 느비예트 ⭐️</button><br>
+                <hr>
                 <button class="pickup" onclick="Tartaglia40()">4.0 후반 타르탈리아</button><br>
                 <button class="pickup" onclick="Zhongli40()">4.0 후반 종려</button><br>
                 <button class="pickup" onclick="Yelan40()">4.0 전반 야란</button><br>
                 <button class="pickup" onclick="Lyney40()">4.0 전반 리니 ⭐️</button><br>
             </div>
-            <div id="wish_tester">
+            <div id="wish-tester">
                 <span id="dateofevent">픽업 기간 : </span><br>
                 <span id="fivestarname">5성 픽업 캐릭터 : </span><br>
                 <span id="fourstarnames">4성 픽업 캐릭터 : </span><br>
@@ -60,9 +66,11 @@
                 </span>
                 <br>
                 <br>
+                <br>
             </div>
         </div>
         <div id="calculation-info">
+            <br>
             <hr>
             <a href="#none" id="toggle-calculation-info" onclick="toggleDiv('real-calculation-info','toggle-calculation-info', '정보 계산한 방법')">
             + 정보 계산한 방법</a>
@@ -75,7 +83,6 @@
                 ( 74 : 6.6% > 75 : 12.6% > 76 : 18.6% > ... > 88: 90.6%  > 89 : 96.6% )<br>
                 90번째 : 100%<br>
                 5성이 나왔을 시 확률 초기화<br>
-                랜덤 숫자는 소숫점을 올림하여 정수로 계산<br>
                 <h4>1-2) 4성 확률</h4>
                 1 ~ 8번째 : 5.1%<br>
                 9번쨰 : 56.1%<br>
@@ -85,7 +92,7 @@
                 <h4>2-1) 원석</h4>
                 뽑은 횟수 * 160 = 사용 원석 개수<br>
                 <h4>2-2) 돈</h4>
-                한 트럭 기준 원석 당 원으로 계산하였다<br>
+                한 트럭 기준 원석 당 원으로 계산함<br>
                 사용 원석 개수 * 14.8 = 사용한 돈<br>
             </div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

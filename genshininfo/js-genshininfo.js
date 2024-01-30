@@ -1,3 +1,20 @@
+
+
+function showInfoDivWithID(divID) {
+    var infoDivs = document.querySelectorAll(".infoDiv");
+
+    infoDivs.forEach(function(div) {
+        if(div.id === divID) {
+            div.style.display = "block";
+        }
+        else {
+            div.style.display = "none";
+        }
+    });
+}
+
+
+
 /**
  * Toggles a div to be shown or hidden
  * @param {*} divID The id of the div or span that will be hidden or shown

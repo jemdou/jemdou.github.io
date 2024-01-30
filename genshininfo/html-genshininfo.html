@@ -12,19 +12,39 @@
         </title>
     </head>
 
-    <body>
-        <div id="mainContent">
+    <body onload="showInfoDivWithID('main-info')">
+        <div id="header">
             <br>
-            <h2>info for genshin impact</h2>
+            <h2>원신 정보글</h2>
             <hr> <!-- horizontal rule -->
             <hr> <!-- horizontal rule -->
-            <h3><u>정보</u></h3>
-            - 캐릭터를 키우는데에는 절대적인 것이 없습니다.<br>
-            - 여기에 적혀있는건 무과금/저과금 기준의 정보로 대부분 작성되어 있습니다.<br>
-            <br>
-            <a href="#none" id="showWords" onclick="toggleDiv('hideWords','showWords','용어 정리')">+ 용어 정리</a><br>
-            <div id="hideWords" style="display: none; padding-left: 30px;">
-                <hr color="e2e2e2">
+        </div>
+        <div id="content">
+            <div id="side-panel">
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('main-info')">메인</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('words-info')">용어 정리</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('links-info')">정보 링크</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('items-info')">필요한 재료</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="toggleDiv('char_list','char_list_link','캐릭터 목록')">+ 캐릭터 목록</a>
+                <div id="char_list" style="display:none;">
+                    <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('furina-info')">푸리나</a>
+                </div>
+                <hr><hr>
+                <a href = "genshininfo-wishpuller/html-genshininfo-wishpuller.html" target = "_self">
+                    <원신 뽑기>
+                </a><br>
+
+            </div>
+
+            <div class="infoDiv" id="main-info">
+                - 캐릭터를 키우는데에 물론 좋은 세팅은 있지만 절대적인 세팅은 없습니다.<br><br>
+                - 여기에 적혀있는건 무과금/저과금 기준의 정보로 대부분 작성되어 있습니다.
+            </div>
+            <div class="infoDiv" id="words-info">
                 <img src="genshininfo-img/ar1.png" alt="adventure-rank-one" style="height:70px;"><br>
                 <img src="genshininfo-img/wl.png" alt="world-level" style="height:70px;"><br>
                 <b>모험가 레벨 = 모험 등급 = AR</b><br>
@@ -43,135 +63,14 @@
                 풀돌 = 6돌<br>
                 월드 보스 = 토벌 보스<br>
                 영역 토벌 보스 = 주간 보스<br>
-                <hr color="e2e2e2">
+                (무기 관련하여) 재련: x재 = x재련 단계<br>
             </div>
-            <br>
-            <a href="#none" id="info_links_link" onclick="toggleDiv('info_links','info_links_link','정보 링크')">+ 정보 링크</a><br>
-            <div id="info_links" style="display: none; padding-left: 30px;">
-                <hr color="e2e2e2">
+            <div class="infoDiv" id="links-info">
                 <a href = "https://www.youtube.com/watch?v=HzZdEezYPR4&t=718s"target = "_blank">what to do at certain Adventure Ranks (AR) (youtube, english)</a><br>
                 <br>
                 <a href = "https://youtu.be/8LaNjLHiaic?t=3" target = "_blank"> 특정 모험랭크 별 해야할 일들 (유튜브, 한국어)</a><br>
-                <hr color="e2e2e2">
             </div>
-
-            <h3><u>캐릭터 / Characters</u></h3>
-            <!--
-            <a href="#none" id="showChrOrder" onclick="if(hideChrOrder.style.display=='none') 
-            {hideChrOrder.style.display='';showChrOrder.innerText='- 캐릭터 출시 순서'}
-            else {hideChrOrder.style.display='none';showChrOrder.innerText='+ 캐릭터 출시 순서'}">
-            + 캐릭터 출시 순서
-            </a><br>
-            <div id="hideChrOrder" style="display: none">
-                <hr color="e2e2e2">
-                    img source: https://genshin-builds.com/ko/characters
-                    list source: https://progameguides.com/genshin-impact/all-genshin-impact-characters-listed-by-order-of-release-date/#Version_10_Released_September_28_2020
-
-                <a href="#none" id="showv10" onclick="if(hidev10.style.display=='none') 
-                {hidev10.style.display='';showv10.innerText='- v1.0'}
-                else {hidev10.style.display='none';showv10.innerText='+ v1.0'}">
-                + v1.0
-                </a><br>
-                <div id="hidev10" style="display: none">
-                    <hr color="e2e2e2">
-                    <img src="genshininfo-default-img/traveler.png" alt="traveler-img" style="height:50px">
-                    <img src="genshininfo-img/anemo.png" alt="anemo-img" style="height:50px">
-                    <br>여행자 / Traveler (바람/Anemo)<br><br>
-                    <img src="genshininfo-default-img/traveler.png" alt="traveler-img" style="height:50px">
-                    <img src="genshininfo-img/geo.png" alt="geo-img" style="height:50px">
-                    <br>여행자 / Traveler (바위/Geo)<br><br>
-                    <hr color="e2e2e2">
-                    
-                    <b>( 5* )</b><br><br>
-                    <img src="genshininfo-default-img/diluc.png" alt="diluc-img" style="height:50px">
-                    <img src="genshininfo-img/pyro.png" alt="pyro-img" style="height:50px">
-                    <br>다이루크 / Diluc (불/Pyro)<br><br>
-                    <img src="genshininfo-default-img/jean.png" alt="jean-img" style="height:50px">
-                    <img src="genshininfo-img/anemo.png" alt="anemo-img" style="height:50px">
-                    <br>진 / Jean (바람/Anemo)<br><br>
-                    <img src="genshininfo-default-img/keqing.png" alt="keqing-img" style="height:50px">
-                    <img src="genshininfo-img/electro.png" alt="electro-img" style="height:50px">
-                    <br>각청 / Keqing (번개/Electro)<br><br>
-                    <img src="genshininfo-default-img/mona.png" alt="mona-img" style="height:50px">
-                    <img src="genshininfo-img/hydro.png" alt="hydro-img" style="height:50px">
-                    <br>모나 / Mona (물/Hydro)<br><br>
-                    <img src="genshininfo-default-img/qiqi.png" alt="qiqi-img" style="height:50px">
-                    <img src="genshininfo-img/cryo.png" alt="cryo-img" style="height:50px">
-                    <br>치치 / Qiqi (얼음/Cryo)<br><br>
-                    <img src="genshininfo-default-img/venti.png" alt="venti-img" style="height:50px">
-                    <img src="genshininfo-img/anemo.png" alt="anemo-img" style="height:50px">
-                    <br>벤티 / Venti (바람/Anemo)<br><br>
-                    <img src="genshininfo-default-img/klee.png" alt="klee-img" style="height:50px">
-                    <img src="genshininfo-img/pyro.png" alt="pyro-img" style="height:50px">
-                    <br>클레 / Klee (불/Pyro)<br><br>
-                
-                    <hr color="e2e2e2">
-
-                    <b>( 4* )</b><br><br>
-                    <img src="genshininfo-default-img/amber.png" alt="amber-img" style="height:50px">
-                    <img src="genshininfo-img/pyro.png" alt="pyro-img" style="height:50px">
-                    <br>앰버 / Amber (불/Pyro)<br><br>
-                    <img src="genshininfo-default-img/barbara.png" alt="amber-img" style="height:50px">
-                    <img src="genshininfo-img/hydro.png" alt="hydro-img" style="height:50px">
-                    <br>바바라 / Barbara (물/Hydro)<br><br>
-                    <img src="genshininfo-default-img/beidou.png" alt="beidou-img" style="height:50px">
-                    <img src="genshininfo-img/electro.png" alt="electro-img" style="height:50px">
-                    <br>북두 / Beidou (번개/Electro)<br><br>
-                    <img src="genshininfo-default-img/bennett.png" alt="bennett-img" style="height:50px">
-                    <img src="genshininfo-img/pyro.png" alt="pyro-img" style="height:50px">
-                    <br>베넷 / Bennett (불/Pyro)<br><br>
-                    <img src="genshininfo-default-img/chongyun.png" alt="chongyun-img" style="height:50px">
-                    <img src="genshininfo-img/cryo.png" alt="cryo-img" style="height:50px">
-                    <br>중운 / Chongyun (얼음/Cyro)<br><br>
-                    <img src="genshininfo-default-img/fischl.png" alt="fischl-img" style="height:50px">
-                    <img src="genshininfo-img/electro.png" alt="electro-img" style="height:50px">
-                    <br>피슬 / Fischl (번개/Electro)<br><br>
-                    <img src="genshininfo-default-img/kaeya.png" alt="kaeya-img" style="height:50px">
-                    <img src="genshininfo-img/cryo.png" alt="cryo-img" style="height:50px">
-                    <br>케이야 / Kaeya (얼음/Cryo)<br><br>
-                    <img src="genshininfo-default-img/lisa.png" alt="lisa-img" style="height:50px">
-                    <img src="genshininfo-img/electro.png" alt="electro-img" style="height:50px">
-                    <br>리사 / Lisa (번개/Electro)<br><br>
-                    <img src="genshininfo-default-img/ningguang.png" alt="ningguang-img" style="height:50px">
-                    <img src="genshininfo-img/geo.png" alt="geo-img" style="height:50px">
-                    <br>응광 / Ningguang (바위/Geo)<br><br>
-                    <img src="genshininfo-default-img/noelle.png" alt="noelle-img" style="height:50px">
-                    <img src="genshininfo-img/geo.png" alt="geo-img" style="height:50px">
-                    <br>노엘 / Noelle (바위/Geo)<br><br>
-                    <img src="genshininfo-default-img/razor.png" alt="razor-img" style="height:50px">
-                    <img src="genshininfo-img/electro.png" alt="electro-img" style="height:50px">
-                    <br>레이저 / Razor (번개/Electro)<br><br>
-                    <img src="genshininfo-default-img/sucrose.png" alt="sucrose-img" style="height:50px">
-                    <img src="genshininfo-img/anemo.png" alt="anemo-img" style="height:50px">
-                    <br>설탕 / Sucrose (바람/Anemo)<br><br>
-                    <img src="genshininfo-default-img/xiangling.png" alt="xiangling-img" style="height:50px">
-                    <img src="genshininfo-img/pyro.png" alt="pyro-img" style="height:50px">
-                    <br>향릉 / Xiangling (불/Pyro)<br><br>
-                    <img src="genshininfo-default-img/xingqiu.png" alt="xingqiu-img" style="height:50px">
-                    <img src="genshininfo-img/hydro.png" alt="hydro-img" style="height:50px">
-                    <br>행추 / xingqiu (물/Hydro)<br><br>
-
-                </div>
-                <hr color="e2e2e2">
-            </div>
-            <br>
-            <a href="#none" id="showRaiden" onclick="if(hideRaiden.style.display=='none') 
-            {hideRaiden.style.display='';showRaiden.innerText='- 라이덴 쇼군 / Raiden Shogun'}
-            else {hideRaiden.style.display='none';showRaiden.innerText='+ 라이덴 쇼군 / Raiden Shogun'}">
-            + 라이덴 쇼군 / Raiden Shogun
-            </a><br>
-            <div id="hideRaiden" style="display: none">
-                <hr color="e2e2e2">
-                <b>라이덴 상세 내용</b><br>
-                <img src="genshininfo-img/raiden.png" alt="raiden-img-big" style="width:300px"><br>
-                육성1: 원충 서포터
-                <hr color="e2e2e2">
-            </div>
-            <br>
-            -->
-            <a href="#none" id="char_info_link" onclick="toggleDiv('char_info','char_info_link','캐릭터 키우는데 필요한 정보')">+ 캐릭터 키우는데 필요한 정보</a>
-            <div id="char_info" style="display: none; padding-left: 30px;">
-                <hr color="e2e2e2">
+            <div class="infoDiv" id="items-info" >
                 <a href="#none" id="ascension_info_link" onclick="toggleDiv('ascension_info','ascension_info_link','돌파 / 최대레벨 증가')">+ 돌파 / 최대레벨 증가</a>
                 <br>
                 <div id="ascension_info" style="display: none;">
@@ -202,6 +101,7 @@
                     청금석 : 가루 1개, 조각 9개, 덩이 9개, 완전체 6개<br>
                     지역특산물 : 168개<br>
                     일반몹재료 : 1성 18개, 2성 30개, 3성 36개<br>
+                    월드보스재료 : 36개<br>
                     모라 : 42만<br>
                 </div>
                 <br>
@@ -250,107 +150,79 @@
                     왕관 : 1개<br>
                     총 필요한 량은 여기서 3배<br>
                 </div>
-                <hr color="e2e2e2">
             </div>
-            <br><br>
-            <a href="#none" id="char_list_link" onclick="toggleDiv('char_list','char_list_link','캐릭터 목록')">+ 캐릭터 목록</a>
-            <div id="char_list" style="display:none; padding-left: 30px;">
+            <div class="infoDiv" id="furina-info">
+                <img src="genshininfo-default-img/furina.png" alt="furina-img" style="height:150px">
                 <hr color="e2e2e2">
-                <a href="#none" id="furina_link" onclick="toggleDiv('furina','furina_link','푸리나')">+ 푸리나</a>
-                <div id="furina" style="display: none; padding-left: 30px;">
-                    <hr color="e2e2e2">
-                    <img src="genshininfo-default-img/furina.png" alt="furina-img" style="height:150px">
-                    <hr color="e2e2e2">
-                    원소전투스킬로 지속적인 물속성 딜이 가능하고 원소폭발로 딜뻥을 넣어주는 캐릭터
-                    <hr color="e2e2e2">
-                    <b><u>돌파 관련</b></u><br>
-                    1. 청금석<br>
-                    <a href="https://genshin.gamedot.org/?mid=wiki&view=%EC%88%9C%EC%88%98%ED%95%9C+%EC%B2%AD%EA%B8%88%EC%84%9D" target="_blank">
-                        순수한 (파란) 청금석 (게임닷)
-                    </a><br>
-                    2. 일반몹재료<br>
-                    <a href = "https://genshin.gamedot.org/?mid=wiki&view=%EA%B5%AC%EB%9D%BC%EA%B5%AC%EB%9D%BC+%EA%BD%83%EA%BF%80" target="_blank">
-                        꽃꿀 (게임닷)
-                    </a><br>
-                    3. 지역특산물<br>
-                    <a href = "https://genshin.gamedot.org/?mid=genshinmaps&type=wiki&id=%ED%98%B8%EC%88%AB%EB%B9%9B+%EC%9D%80%EB%B0%A9%EC%9A%B8%EA%BD%83&list=606d0ae530c04" target = "blank">
-                        호숫빛 은방울 꽃 위치 (원신 맵스)
-                    </a><br>
-                    4. 월드보스 재료<br>
-                    <a href = "https://genshin.gamedot.org/?mid=wiki&view=%EC%B4%88%EC%9B%94%ED%95%98%EC%A7%80+%EB%AA%BB%ED%95%9C+%EB%AC%BC" target = "_blank">
-                        초월하지 못한 물 (게임닷)
-                    </a>|
-                    <a href="https://ghostweb.tistory.com/1831" target="_blank">
-                        물의 환인간 (티스토리)
-                    </a>
-                    <br>
-                    <hr color="e2e2e2">
-                    <b><u>특성 관련</u></b><br>
-                    찍는 순서: 원소전투스킬-> 원소폭발 -> 일반공격 <br>
-                    1. 책/스크롤/석판<br>
-                    <a href="https://genshin.gamedot.org/?mid=wiki&view=%E3%80%8C%EC%A0%95%EC%9D%98%E3%80%8D%EC%9D%98+%EA%B0%80%EB%A5%B4%EC%B9%A8" target="_blank">
-                        정의 시리즈 (게임닷)
-                    </a>|
-                    <a href="https://genshin.gamedot.org/?mid=wiki&view=%EC%B0%BD%EB%B0%B1%ED%95%9C+%EC%98%9B+%EC%98%81%EA%B4%91" target="_blank">
-                        위치 (게임닷)
-                    </a><br>
-                    2. 일반몹재료<br>
-                    <a href="https://genshin.gamedot.org/?mid=wiki&view=%EA%B5%AC%EB%9D%BC%EA%B5%AC%EB%9D%BC+%EA%BD%83%EA%BF%80" target="_blank">
-                        꿀꽃 (게임닷)
-                    </a><br>
-                    3. 주간보스재료<br>
-                    <a href="https://genshin.gamedot.org/?mid=wiki&view=%EB%B9%9B+%EC%97%86%EB%8A%94+%EB%AC%BC%EC%A7%88" target="_blank">
-                        빛 없는 물질 (게임닷)
-                    </a>|
-                    <a href="https://genshin.gamedot.org/?mid=wiki&view=%EB%B3%84%EC%9D%84+%EC%82%BC%ED%82%A8+%EA%B3%A0%EB%9E%98" target="_blank">
-                        LV70이상 별을 삼킨 고래 (게임닷)
-                    </a>
-                    <hr color="e2e2e2">
-                    <b><u>무기</u></b><br>
-                    <a href="https://genshin.gamedot.org/?mid=wiki&view=%ED%8E%98%EB%B3%B4%EB%8B%88%EC%9A%B0%EC%8A%A4+%EA%B2%80" target="_blank">
-                        페보니우스의 검
-                    </a>(원충을 챙기기에 좋다)<br>
-                    <hr color="e2e2e2">
-                    <b><u>성유물</u></b><br>
-                    <a href="https://genshin.gamedot.org/?mid=wiki&view=%ED%99%A9%EA%B8%88+%EA%B7%B9%EB%8B%A8" target="_blank">
-                        황금극단 4세트
-                    </a>|
-                    <a href="https://genshin.gamedot.org/?mid=wiki&view=%EC%A3%84%EC%97%85%EC%9D%98+%EC%A2%85%EB%A7%90" target="_blank">
-                        위치
-                    </a><br>
-                    
-
-
-
-
-
-                    <hr color="e2e2e2">
-                </div>
+                1. 원소 전투 스킬로 지속적인 물 딜링이 가능하다<br>
+                2. 원소 폭발을 사용한 다음 체력의 변동량이 큼에 따라 딜량버프가 들어간다<br>
                 <hr color="e2e2e2">
+                <b><u>돌파 관련</b></u><br>
+                1. 청금석<br>
+                <a href="https://genshin.gamedot.org/?mid=wiki&view=%EC%88%9C%EC%88%98%ED%95%9C+%EC%B2%AD%EA%B8%88%EC%84%9D" target="_blank">
+                    순수한 (파란) 청금석 (게임닷)
+                </a><br>
+                2. 일반몹재료<br>
+                <a href = "https://genshin.gamedot.org/?mid=wiki&view=%EA%B5%AC%EB%9D%BC%EA%B5%AC%EB%9D%BC+%EA%BD%83%EA%BF%80" target="_blank">
+                    꽃꿀 (게임닷)
+                </a><br>
+                3. 지역특산물<br>
+                <a href = "https://genshin.gamedot.org/?mid=genshinmaps&type=wiki&id=%ED%98%B8%EC%88%AB%EB%B9%9B+%EC%9D%80%EB%B0%A9%EC%9A%B8%EA%BD%83&list=606d0ae530c04" target = "blank">
+                    호숫빛 은방울 꽃 위치 (원신 맵스)
+                </a><br>
+                4. 월드보스 재료<br>
+                <a href = "https://genshin.gamedot.org/?mid=wiki&view=%EC%B4%88%EC%9B%94%ED%95%98%EC%A7%80+%EB%AA%BB%ED%95%9C+%EB%AC%BC" target = "_blank">
+                    초월하지 못한 물 (게임닷)
+                </a>|
+                <a href="https://ghostweb.tistory.com/1831" target="_blank">
+                    물의 환인간 (티스토리)
+                </a>
+                <br>
+                <hr color="e2e2e2">
+                <b><u>특성 관련</u></b><br>
+                찍는 순서: 원소전투스킬-> 원소폭발 -> 일반공격 <br>
+                1. 책/스크롤/석판<br>
+                <a href="https://genshin.gamedot.org/?mid=wiki&view=%E3%80%8C%EC%A0%95%EC%9D%98%E3%80%8D%EC%9D%98+%EA%B0%80%EB%A5%B4%EC%B9%A8" target="_blank">
+                    정의 시리즈 (게임닷)
+                </a>|
+                <a href="https://genshin.gamedot.org/?mid=wiki&view=%EC%B0%BD%EB%B0%B1%ED%95%9C+%EC%98%9B+%EC%98%81%EA%B4%91" target="_blank">
+                    위치 (게임닷)
+                </a><br>
+                2. 일반몹재료<br>
+                <a href="https://genshin.gamedot.org/?mid=wiki&view=%EA%B5%AC%EB%9D%BC%EA%B5%AC%EB%9D%BC+%EA%BD%83%EA%BF%80" target="_blank">
+                    꿀꽃 (게임닷)
+                </a><br>
+                3. 주간보스재료<br>
+                <a href="https://genshin.gamedot.org/?mid=wiki&view=%EB%B9%9B+%EC%97%86%EB%8A%94+%EB%AC%BC%EC%A7%88" target="_blank">
+                    빛 없는 물질 (게임닷)
+                </a>|
+                <a href="https://genshin.gamedot.org/?mid=wiki&view=%EB%B3%84%EC%9D%84+%EC%82%BC%ED%82%A8+%EA%B3%A0%EB%9E%98" target="_blank">
+                    LV70이상 별을 삼킨 고래 (게임닷)
+                </a>
+                <hr color="e2e2e2">
+                <b><u>무기</u></b><br>
+                <a href="https://genshin.gamedot.org/?mid=wiki&view=%ED%8E%98%EB%B3%B4%EB%8B%88%EC%9A%B0%EC%8A%A4+%EA%B2%80" target="_blank">
+                    1. 페보니우스의 검
+                </a><br>
+                단순히 원충을 위한 무기. 다른 캐릭터들 원충에도 도움이 된다고 한다(?)<br>
+                <a href="https://genshin.gamedot.org/?mid=wiki&view=%EC%9E%BF%EB%B9%9B%EC%9D%98+%EA%B0%95+%EB%B1%83%EC%82%AC%EA%B3%B5" target="_blank">
+                    2. 잿빛의 강 뱃사공
+                </a><br>
+                원충은 덜 되지만 원소전투스킬의 치확을 올려준다<br>
+                낚시만으로 5재련을 할 수 있어 열심히만 하면 된다.<br>
+                <hr color="e2e2e2">
+                <b><u>성유물</u></b><br>
+                <a href="https://genshin.gamedot.org/?mid=wiki&view=%ED%99%A9%EA%B8%88+%EA%B7%B9%EB%8B%A8" target="_blank">
+                    황금극단 4세트
+                </a>|
+                <a href="https://genshin.gamedot.org/?mid=wiki&view=%EC%A3%84%EC%97%85%EC%9D%98+%EC%A2%85%EB%A7%90" target="_blank">
+                    위치
+                </a><br>
             </div>
-            <br><br>
-
-            <h3><u>성유물 / Artifacts</u></h3>
-            <br>
+        </div>
+        <div id="update-info">
             <hr>
-            <h3><u>?</u></h3>
-            <a href = "genshininfo-wishpuller/html-genshininfo-wishpuller.html" target = "_self">
-                원신 뽑기
-             </a><br>
-            <!--
-            <h4><u>"순위"</u></h4>
-            이 게임은 pve 게임이기 때문에 굳이 순위를 고를 필요가 없지만,<br>
-            정 게임을 편하게 하고 싶다면 이 순위들을 따르면 된다.<br>
-            <a href = "https://game8.co/games/Genshin-Impact/archives/297465"
-                target = "_blank">
-                ver 3.4 순위 (game8, english) - 23.02.07 작성
-            </a><br>
-            <br>
-            <hr>
-            -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <hr>
-            <span style="float: right;">last update : 01 / 18 / 2024</span>
+            <span style="float: right;">last update : 01 / 29 / 2024</span>
             <br><br>
         </div>
     </body>

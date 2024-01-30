@@ -18,10 +18,53 @@ a:active {
     color: #FF4747
 }
 
-#mainContent {
-    width: 600px;
+/*=== div settings ===*/
+#header {
+    width: 800px;
     margin: auto;
 }
+
+#content {
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+#side-panel {
+    width: 17%;
+    float: left;
+    text-align: center;
+    border: 2px solid#b1b1b1;
+    overflow: auto;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.infoDiv {
+    width: 77%;
+    float: right;
+    padding: 10px;
+    border: 2px solid#b1b1b1;
+    overflow: auto;
+    height: 500px;
+    display: none;
+}
+
+#update-info {
+    width: 800px;
+    margin: auto;
+}
+
+/* === class settings ===
+.side-panel-button {
+    padding: 0;
+    border: none;
+    background: none;
+} */
+
+
+/*=== text settings ===*/
 
 h2 {
     text-align: center;
