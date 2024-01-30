@@ -552,6 +552,43 @@ function NameVersionTemplate() {
     window.alert("버전 전/후반 픽업캐릭 픽업으로 설정되었습니다!");
 }
 
+
+function Miko44() { // 4.4 후반
+    choosePickUp = true;
+
+    addIntoFiveStarArray();
+    characterNormalFiveStar.length = 7;
+    addIntoFourStarArray();
+    charactersFourStar.length = 40;
+
+    currPickUpFiveStar = miko;
+    currPickUpFourStar.length = 0;
+    currPickUpFourStar.push(yaoyao);
+    currPickUpFourStar.push(xinyan);
+    currPickUpFourStar.push(ningguang);
+
+    setNames("2024년 2월 20일 ~ 2024년 3월 12일");
+
+    window.alert("4.4 후반 " + miko + " 픽업으로 설정되었습니다!");
+}
+function Xiao44() { // 4.4 후반
+    choosePickUp = true;
+
+    addIntoFiveStarArray();
+    characterNormalFiveStar.length = 7;
+    addIntoFourStarArray();
+    charactersFourStar.length = 40;
+
+    currPickUpFiveStar = xiao;
+    currPickUpFourStar.length = 0;
+    currPickUpFourStar.push(yaoyao);
+    currPickUpFourStar.push(xinyan);
+    currPickUpFourStar.push(ningguang);
+
+    setNames("2024년 2월 20일 ~ 2024년 3월 12일");
+
+    window.alert("4.4 후반 " + xiao + " 픽업으로 설정되었습니다!");
+}
 function Nahida44() { // 4.4 전반
     choosePickUp = true;
 
