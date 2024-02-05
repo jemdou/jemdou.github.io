@@ -12,35 +12,122 @@
         </title>
     </head>
 
-    <body>
-        <div>
-        <h2>a place to find some info of audio products</h2>
-        <hr> <!-- horizontal rule -->
-        <hr> <!-- horizontal rule -->
-        <h4>IEMs(In Ear Monitors) / Earphones</h4>
-        <a href = "https://crinacle.com/rankings/iems/"
-            target = "_blank">
-            crinacle ranking - iems
-        </a><br>
-        (such as Moondrop's Aria, SSP)<br>
-        <br>
-        <hr> <!-- horizontal rule -->
-        <h4>Headphones</h4>
-        <a href = "https://crinacle.com/rankings/headphones/"
-            target = "_blank">
-            crinacle ranking - headphones
-        </a><br>
-        (such as Apple's Airpods Max, Sony's WM-1000XM4,5)<br>
-        <br>
-        <hr> <!-- horizontal rule -->
-        <h4>TWEs(True Wireless Earphones)</h4>
-        <a href = "https://crinacle.com/guide/tws/"
-            target = "_blank">
-            crinacle ranking - true wireless earphones
-        </a><br>
-        (such as Apple's Airpods Pro, QCY T5)<br>
-        <br>
-        <hr> <!-- horizontal rule -->
+    <body onload="showInfoDivWithID('main-info')">
+        <div id="header">
+            <br>
+            <h2>A Place to Find Info Related to Audio</h2>
+            <hr> <!-- horizontal rule -->
+            <hr> <!-- horizontal rule -->
+        </div>
+        <div id="content">
+            <div id="side-panel">
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('main-info')">Main</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('audio-info')">Audio Info</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('read-graph')">Reading Graphs</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('audio-info-links')">Informative Links?</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('rank-links')">External Links</a>
+                <br>
+            </div>
+
+            <div class="infoDiv" id="main-info">
+                This page explains information on audio / audio products<br>
+            </div>
+            <div class="infoDiv" id="audio-info">
+                <b>Terms</b><br><br>
+                DAC (Digital to Analog Converter)<br>
+                - Somethign that converts digial signals to audio signals<br><br>
+                Amplifier<br>
+                - Somethign that amplifies audio<br><br>
+                Analog Tuning<br>
+                - Changing the tune of an audio product using analog matters such as changing eartips, changing headphone cups, etc<br><br>
+                Digital Tuning<br>
+                - Changing the tune of an audio product using software (through the DAC)<br><br>
+                EQ (Equalizer)<br>
+                - Something that can change the tune of an audio product to your needs<br><br>
+                DSP (Digital Signal Processing)<br> 
+                - Simply an EQ<br><br>
+                DSP Products<br>
+                - A product that has an EQ/DSP capable DAC chip in the audio product so the company can tune the audio<br><br>
+                <hr>
+                <b>Info</b><br><br>
+                How do music process when we listen to it? (In simple terms) <br>
+                1. Music Files are digital files (.mp3, .wav, streaming services)<br>
+                2. They go into a DAC and convert to analog signals<br>
+                3. The analog signals goes through an amplifer (and gets amplified)<br>
+                4. We hear the amplified music.<br>
+                <br>
+                (Phones with headphones jacks (3.5mm) have an internal DAC.)<br>
+
+
+                <hr>
+                <b>References</b><br><br>
+                <a href = "https://www.youtube.com/watch?v=mEnrzwQJ_kM"
+                    target = "_blank">
+                    Tuning earphones with... cables? | "DSP" Explained [Youtube - crinacle]
+                </a><br>
+            </div>
+            <div class="infoDiv" id="read-graph"></divclass>
+                >
+            </div>
+            <div class="infoDiv" id="audio-info-links">
+                <b>Videos to Watch</b><br><br>
+                <a href = "https://www.youtube.com/watch?v=PsijHAVLbuY"
+                    target = "_blank">
+                    How to TUNE your headphones (the easy way!) [Youtube - crinacle]
+                </a><br><br>
+                <a href = "https://www.youtube.com/watch?v=mEnrzwQJ_kM"
+                    target = "_blank">
+                    Tuning earphones with... cables? | "DSP" Explained [Youtube - crinacle]
+                </a><br><br>
+                <a href = "https://www.youtube.com/watch?v=a3moaaOpYZM"
+                    target = "_blank">
+                    You don't NEED an amplifier [Youtube - crinacle]
+                </a><br><br>
+                <a href = "https://www.youtube.com/watch?v=5dSXPsIJrhc"
+                    target = "_blank">
+                    You can SEE how headphones SOUND [Youtube - crinacle]
+                </a><br><br>
+                <hr>
+                <b>Info to Read</b><br><br>
+                <a href = "https://www.reddit.com/r/headphones/comments/q92e9e/is_a_dac_necessary_for_a_phone/?sort=old"
+                    target = "_blank">
+                    Is a DAC necessary for a phone? [Reddit - r/headphones]
+                </a><br><br>
+            </div>
+            <div class="infoDiv" id="rank-links">
+                <b>IEMs(In Ear Monitors) / Earphones</b><br><br>
+                <a href = "https://crinacle.com/rankings/iems/"
+                    target = "_blank">
+                    crinacle ranking - iems
+                </a><br>
+                (such as Moondrop's Aria, SSP)<br>
+                <br>
+                <hr> <!-- horizontal rule -->
+                <b>Headphones</b><br><br>
+                <a href = "https://crinacle.com/rankings/headphones/"
+                    target = "_blank">
+                    crinacle ranking - headphones
+                </a><br>
+                (such as Apple's Airpods Max, Sony's WM-1000XM4,5)<br>
+                <br>
+                <hr> <!-- horizontal rule -->
+                <b>TWEs(True Wireless Earphones)</b><br><br>
+                <a href = "https://crinacle.com/guide/tws/"
+                    target = "_blank">
+                    crinacle ranking - true wireless earphones
+                </a><br>
+                (such as Apple's Airpods Pro, QCY T5)<br>
+                <br>
+            </div>
+        </div>
+        <div id="update-info">
+            <hr>
+            <span style="float: right;">last update : 02 / 05 / 2024</span>
+            <br><br>
         </div>
     </body>
 </html>

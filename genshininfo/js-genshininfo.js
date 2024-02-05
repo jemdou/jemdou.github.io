@@ -1,5 +1,4 @@
 
-
 function showInfoDivWithID(divID) {
     var infoDivs = document.querySelectorAll(".infoDiv");
 
@@ -12,8 +11,6 @@ function showInfoDivWithID(divID) {
         }
     });
 }
-
-
 
 /**
  * Toggles a div to be shown or hidden
