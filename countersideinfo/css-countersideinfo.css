@@ -20,12 +20,12 @@ a:active {
 
 /*=== div settings ===*/
 #header {
-    width: 800px;
+    width: 900px;
     margin: auto;
 }
 
 #content {
-    width: 800px;
+    width: 900px;
     margin: auto;
     overflow: hidden;
 }
@@ -52,7 +52,7 @@ a:active {
 }
 
 #update-info {
-    width: 800px;
+    width: 900px;
     margin: auto;
 }
 
