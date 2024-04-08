@@ -30,7 +30,7 @@ a:active {
     overflow: hidden;
 }
 #side-panel {
-    width: 17%;
+    width: 30%;
     float: left;
     text-align: center;
     border: 2px solid#b1b1b1;
@@ -42,13 +42,13 @@ a:active {
     padding-right: 5px;
 }
 .infoDiv {
-    width: 77%;
+    width: 64%;
     float: right;
     padding: 10px;
     border: 2px solid#b1b1b1;
     overflow: auto;
-    height: 500px;
     display: none;
+    height: 600px;
 }
 
 #update-info {

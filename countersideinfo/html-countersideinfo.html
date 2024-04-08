@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css-countersideinfo.css">
+        <script src="js-countersideinfo.js"></script>
+
+        <title>
+            Counter Side
+        </title>
+    </head>
+
+    <body onload="showInfoDivWithID('main-info')">
+        <div id="header">
+            <br>
+            <h2>카운터사이드 페이지</h2>
+            <hr><hr>
+        </div>
+        <div id="content">
+            <div id="side-panel">
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('main-info')">메인</a>
+                <hr>
+                <a href="#none" class="side-panel-button" id="info-list-link" onclick="toggleDiv('info-list','info-list-link','정보')">+ 정보</a>
+                <div id="info-list" style="display:none;">
+                    |<br>
+                    <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('characters')">캐릭터</a>
+                </div>
+                <hr>
+                <hr>
+                <a href="#none" class="side-panel-button" id="story-list-link" onclick="toggleDiv('story-list','story-list-link','스토리')">+ 스토리</a>
+                <div id="story-list" style="display:none;">
+                    |<br>
+                    <a href="#none" class="side-panel-button" id="main-stream-list-link" onclick="toggleDiv('main-stream-list','main-stream-list-link','메인스트림')">+ 메인스트림</a><br>
+                    <div id="main-stream-list" style="display:none;">
+                        EP.1 신입사원<br>
+                        EP.2 리플레이서<br>
+                        EP.3 옛 인연<br>
+                        EP.4 테라사이드 상<br>
+                        EP.5 테라시아드 하<br>
+                        EP.6 징조<br>
+                        EP.7 구도자<br>
+                        EP.8 폭풍을 부루는 자<br>
+                        EP.9 클리포트 게임 Part 1<br>
+                        EP.9.5 다정한 자와 무정한 자<br>
+                        EP.10 클리포트 게임 Part 2<br>
+                        EP.11 엑자일러
+                    </div>
+                    <a href="#none" class="side-panel-button" id="sub-stream-list-link" onclick="toggleDiv('sub-stream-list','sub-stream-list-link','서브스트림')">+ 서브스트림</a><br>
+                    <div id="sub-stream-list" style="display:none;">
+                        <a href="#none" class="side-panel-button" style="color:#007272" onclick="showInfoDivWithID('managementfailed')">| 관리 실패 |</a><br>
+                        <a href="#none" class="side-panel-button" style="color:#007272" onclick="showInfoDivWithID('foryouwhodoesntcry')">| 울지 않는 너를 위해 |</a>
+                    </div>
+                    <a href="#none" class="side-panel-button" id="event-stream-list-link" onclick="toggleDiv('event-stream-list','event-stream-list-link','이벤트/월드맵/기타')">+ 이벤트/월드맵/기타</a><br>
+                    <div id="event-stream-list" style="display:none;">
+                        <a href="#none" class="side-panel-button" style="color:#007272" onclick="showInfoDivWithID('minabizarre')">| 유미나의 기묘한 모험 |</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="infoDiv" id="main-info">
+                - 카운터사이드와 관련된 정보를 정리해두었습니다<br>
+            </div>
+
+            <div class="infoDiv" id="minabizarre">
+                이세계 배달 대소동
+                <h3>유미나의 기묘한 모험</h3>
+                <!-- <iframe src="story/event/minabizarre/프롤로그1.txt" width="506px" height="400px"></iframe> -->
+                <a href="#none" class="side-panel-button" id="minabizarre-act1-link" onclick="toggleDiv('minabizarre-act1','minabizarre-act1-link','ACT 1')">+ ACT 1</a><br>
+                <div id="minabizarre-act1" style="display:none;">
+                    <iframe src="story/event/minabizarre/minabizarre-act3.txt" width="506px" height="300px"></iframe>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" onclick="toggleDiv('minabizarre-act1','minabizarre-act1-link','ACT 1')">닫기</a><br></span>
+                </div>
+            </div>
+
+        </div>
+        <div id="update-info">
+            <hr>
+            <span style="float:right;">last update : 04 / 07 / 2024</span>
+            <br><br>
+        </div>
+
+    </body>
+</html>

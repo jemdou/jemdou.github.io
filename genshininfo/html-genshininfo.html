@@ -25,15 +25,23 @@
                 <hr>
                 <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('words-info')">용어 정리</a>
                 <hr>
-                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('links-info')">정보 링크</a>
-                <hr>
                 <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('items-info')">필요한 재료</a>
                 <hr>
-                <a href="#none" class="side-panel-button" onclick="toggleDiv('char_list','char_list_link','캐릭터 목록')">+ 캐릭터 목록</a>
-                <div id="char_list" style="display:none;">
+                <a href="#none" class="side-panel-button" id="element-list-link" onclick="toggleDiv('element-list','element-list-link','원소 관련 정보')">+ 원소 관련 정보</a>
+                <div id="element-list" style="display:none;">
+                    |<br>
+                    <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('elemental-reaction-info')">원소 반응</a>
+                </div>
+                <hr>
+                <a href="#none" class="side-panel-button" id="char-list-link" onclick="toggleDiv('char-list','char-list-link','캐릭터 목록')">+ 캐릭터 목록</a>
+                <div id="char-list" style="display:none;">
+                    |<br>
                     <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('furina-info')">푸리나</a>
                 </div>
-                <hr><hr>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('links-info')">정보 링크</a>
+                <hr>
+                <hr>
                 <a href = "genshininfo-wishpuller/html-genshininfo-wishpuller.html" target = "_self">
                     <원신 뽑기>
                 </a><br>
@@ -217,6 +225,25 @@
                 <a href="https://genshin.gamedot.org/?mid=wiki&view=%EC%A3%84%EC%97%85%EC%9D%98+%EC%A2%85%EB%A7%90" target="_blank">
                     위치
                 </a><br>
+            </div>
+            <div class="infoDiv" id="elemental-reaction-info">
+                <br>
+                원소 반응은 크게 4 종류가 있다<br><br>
+                <table>
+                    <tr>
+                        <td style="width: 100px">증폭</td><td style="width: 150px">격변</td><td style="width: 200px">격화</td><td style="width: 100px">🎸</td>
+                    </tr>
+                    <tr>
+                        <td>증발/융해</td><td>과부하<br>초전도<br>감전<br>쇄빙<br>확산<br>연소<br>개화<br>개화->만개<br>개화->발화</td><td>활성 -> 촉진, 발산</td><td>결정<br>빙결</td>
+                    </tr>
+                </table>
+                <br>
+                <h4>1. 증폭</h4>
+                증폭 반응은 원소 반응을 일으킨 공격의 피해량을 직접 증폭 시킨다.
+
+                1-1) 증발<br>
+                증발 반응은 
+
             </div>
         </div>
         <div id="update-info">
