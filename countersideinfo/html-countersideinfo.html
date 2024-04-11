@@ -49,12 +49,13 @@
                     </div>
                     <a href="#none" class="side-panel-button" id="sub-stream-list-link" onclick="toggleDiv('sub-stream-list','sub-stream-list-link','서브스트림')">+ 서브스트림</a><br>
                     <div id="sub-stream-list" style="display:none;">
-                        <a href="#none" class="side-panel-button" style="color:#007272" onclick="showInfoDivWithID('managementfailed')">| 관리 실패 |</a><br>
-                        <a href="#none" class="side-panel-button" style="color:#007272" onclick="showInfoDivWithID('foryouwhodoesntcry')">| 울지 않는 너를 위해 |</a>
+                        <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('administrationFailure')">| 관리 실패 |</a><br>
+                        <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('forTheUncrying')">| 울지 않는 너를 위해 |</a><br>
+                        <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('proofOfHeart')">| 마음의 증명 |</a><br>
                     </div>
                     <a href="#none" class="side-panel-button" id="event-stream-list-link" onclick="toggleDiv('event-stream-list','event-stream-list-link','이벤트/월드맵/기타')">+ 이벤트/월드맵/기타</a><br>
                     <div id="event-stream-list" style="display:none;">
-                        <a href="#none" class="side-panel-button" style="color:#007272" onclick="showInfoDivWithID('minabizarre')">| 유미나의 기묘한 모험 |</a><br>
+                        <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('minaBizarre')">| 유미나의 기묘한 모험 |</a><br>
                     </div>
                 </div>
             </div>
@@ -62,33 +63,58 @@
                 - 카운터사이드와 관련된 정보를 정리해두었습니다<br>
             </div>
 
-            <div class="infoDiv" id="minabizarre">
+            <div class="infoDiv" id="minaBizarre">
                 이세계 배달 대소동
                 <h3>유미나의 기묘한 모험</h3>
                 <!-- <iframe src="story/event/minabizarre/프롤로그1.txt" width="506px" height="400px"></iframe> -->
                 <hr>
                 | 
-                <a href="#none" class="side-panel-button" id="minabizarre-act1-link" onclick="toggleDiv('minabizarre-act1','minabizarre-act1-link','ACT 1')">+ ACT 1</a> | 
-                <a href="#none" class="side-panel-button" id="minabizarre-act2-link" onclick="toggleDiv('minabizarre-act2','minabizarre-act2-link','ACT 2')">+ ACT 2</a> |
-                <a href="#none" class="side-panel-button" id="minabizarre-act3-link" onclick="toggleDiv('minabizarre-act3','minabizarre-act3-link','ACT 3')">+ ACT 3</a> |
+                <a href="#none" class="side-panel-button" id="minaBizarre-act1-link" onclick="toggleDiv('minaBizarre-act1','minaBizarre-act1-link','ACT 1')">+ ACT 1</a> | 
+                <a href="#none" class="side-panel-button" id="minaBizarre-act2-link" onclick="toggleDiv('minaBizarre-act2','minaBizarre-act2-link','ACT 2')">+ ACT 2</a> |
+                <a href="#none" class="side-panel-button" id="minaBizarre-act3-link" onclick="toggleDiv('minaBizarre-act3','minaBizarre-act3-link','ACT 3')">+ ACT 3</a> |
                 <hr>
-                <div id="minabizarre-act1" style="display:none;">
-                    <iframe src="story/event/minabizarre/minabizarre-act1.txt" width="550px" height="400px"></iframe><br>
-                    <span style="float:right;"><a href="#none" class="side-panel-button" onclick="toggleDiv('minabizarre-act1','minabizarre-act1-link','ACT 1')">닫기</a><br></span>
+                <div id="minaBizarre-act1" style="display:none;">
+                    <iframe src="story/event/minaBizarre/minaBizarre-act1.txt" width="550px" height="300px"></iframe><br>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" onclick="toggleDiv('minaBizarre-act1','minaBizarre-act1-link','ACT 1')">닫기</a><br></span>
                 </div>
-                <div id="minabizarre-act2" style="display:none;">
-                    <iframe src="story/event/minabizarre/minabizarre-act2.txt" width="550px" height="400px"></iframe><br>
-                    <span style="float:right;"><a href="#none" class="side-panel-button" onclick="toggleDiv('minabizarre-act2','minabizarre-act2-link','ACT 2')">닫기</a><br></span>
+                <div id="minaBizarre-act2" style="display:none;">
+                    <iframe src="story/event/minaBizarre/minaBizarre-act2.txt" width="550px" height="300px"></iframe><br>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" onclick="toggleDiv('minaBizarre-act2','minaBizarre-act2-link','ACT 2')">닫기</a><br></span>
                 </div>
-                <div id="minabizarre-act3" style="display:none;">
-                    <iframe src="story/event/minabizarre/minabizarre-act3.txt" width="550px" height="400px"></iframe><br>
-                    <span style="float:right;"><a href="#none" class="side-panel-button" onclick="toggleDiv('minabizarre-act3','minabizarre-act3-link','ACT 3')">닫기</a><br></span>
+                <div id="minaBizarre-act3" style="display:none;">
+                    <iframe src="story/event/minaBizarre/minaBizarre-act3.txt" width="550px" height="300px"></iframe><br>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" onclick="toggleDiv('minaBizarre-act3','minaBizarre-act3-link','ACT 3')">닫기</a><br></span>
                 </div>
             </div>
+
+            <div class="infoDiv" id="proofOfHeart">
+                알파트릭스 이노베이션
+                <h3>마음의 증명</h3>
+                세계적 기업인 알파트릭스 그룹의 부회장이 살해당하는 사건이 발생한다. 그리고 그 범인으로 지목된 사람은 다름아닌 그룹 총수의 손녀, 신지아였다.
+                <hr>
+                | 
+                <a href="#none" class="side-panel-button" id="proofOfHeart-act1-link" onclick="toggleDiv('proofOfHeart-act1','proofOfHeart-act1-link','ACT 1')">+ ACT 1</a> | 
+                <a href="#none" class="side-panel-button" id="proofOfHeart-act2-link" onclick="toggleDiv('proofOfHeart-act2','proofOfHeart-act2-link','ACT 2')">+ ACT 2</a> | 
+                <a href="#none" class="side-panel-button" id="proofOfHeart-act3-link" onclick="toggleDiv('proofOfHeart-act3','proofOfHeart-act3-link','ACT 3')">+ ACT 3</a> | 
+                <hr>
+                <div id="proofOfHeart-act1" style="display:none;">
+                    <iframe src="story/substream/proofOfHeart/proofOfHeart-act1.txt" width="550px" height="300px"></iframe><br>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" onclick="toggleDiv('proofOfHeart-act1','proofOfHeart-act1-link','ACT 1')">닫기</a><br></span>
+                </div>
+                <div id="proofOfHeart-act2" style="display:none;">
+                    <iframe src="story/substream/proofOfHeart/proofOfHeart-act2.txt" width="550px" height="300px"></iframe><br>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" onclick="toggleDiv('proofOfHeart-act2','proofOfHeart-act2-link','ACT 2')">닫기</a><br></span>
+                </div>
+                <div id="proofOfHeart-act3" style="display:none;">
+                    <iframe src="story/substream/proofOfHeart/proofOfHeart-act3.txt" width="550px" height="300px"></iframe><br>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" onclick="toggleDiv('proofOfHeart-act3','proofOfHeart-act3-link','ACT 3')">닫기</a><br></span>
+                </div>
+            </div>
+            
         </div>
         <div id="update-info">
             <hr>
-            <span style="float:right;">last update : 04 / 07 / 2024</span>
+            <span style="float:right;">last update : 04 / 10 / 2024</span>
             <br><br>
         </div>
 
