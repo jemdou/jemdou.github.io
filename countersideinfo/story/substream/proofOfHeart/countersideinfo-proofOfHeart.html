@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="../../../css-countersideinfo.css"> <!-- 알맞게 수정할 것-->
+        <script src="../../../js-countersideinfo.js"></script> <!-- 알맞게 수정할 것-->
+
+        <title>
+            마음의 증명
+        </title>
+    </head>
+
+    <body onload="showInfoDivWithID('story-info')">
+        <div id="header">
+            <br>
+            <h2>마음의 증명</h2>
+            <hr><hr>
+        </div>
+        <div id="content">
+            <div id="side-panel">
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('story-info')">스토리 정보</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('act1-info')">ACT 1</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('act2-info')">ACT 2</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('act3-info')">ACT 3</a>
+            </div>
+
+            <div class="infoDiv" id="story-info">
+                알파트릭스 이노베이션
+                <h3>마음의 증명</h3>
+                - 세계적인 기업인 알파트릭스 그룹의 부회장이 살해당하는 사건이 발생한다. 그리고 그 범인으로 지목된 사람은 다름아닌 그룹 총수의 손녀, 신지아였다.
+                <br>
+            </div>
+
+            <div class="infoDiv" id="act1-info">
+                <button onclick="toggleDiv('act1-info-#1','','')">#1</button>
+                <button onclick="toggleDiv('act1-info-#2','','')">#2</button>
+                <button onclick="toggleDiv('act1-info-1-1','','')">1-1</button>
+                <button onclick="toggleDiv('act1-info-1-2','','')">1-2</button>
+                <hr>
+
+                <div id="act1-info-#1" style="display:none;">
+                    [#1] 프롤로그 #1<br>
+                    일 년에 한 번, 알파트릭스 본사는 연회를 벌인단다.<br>
+                    전 직원이 참여하는 연회는 호화롭지만, 호화롭기에 언제나 불청객이 꼬이지.<br>
+                    <video width="640" height="360" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        이거 보이면 문제 있음
+                    </video>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" id="act1-info-#1-link" onclick="toggleDiv('act1-info-#1','act1-info-#1-link','#1')">닫기</a></span>
+                    <br><br><hr>
+                </div>
+
+                <div id="act1-info-#2" style="display:none;">
+                    [#2] 프롤로그 #2<br>
+                    첫 수는 클래식하게 킹스 갬빗으로.<br>
+                    <video width="640" height="360" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        이거 보이면 문제 있음
+                    </video>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" id="act1-info-#2-link" onclick="toggleDiv('act1-info-#2','act1-info-#2-link','#2')">닫기</a></span>
+                    <br><br><hr>
+                </div>
+
+                <div id="act1-info-1-1" style="display:none;">
+                    [1-1] 오픈 게임 #1<br>
+                    파사의 목소리에게 들었어~!<br>
+                    준이 있는 이노베이션은 전원 카운터라서 허를 찌르는 기습이 효과적이라고!<br>
+                    <video width="640" height="360" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        이거 보이면 문제 있음
+                    </video>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" id="act1-info-1-1-link" onclick="toggleDiv('act1-info-1-1','act1-info-1-1-link','1-1')">닫기</a></span>
+                    <br><br><hr>
+                </div>
+                
+                <div id="act1-info-1-2" style="display:none;">
+                    [1-2] 오픈 게임 #2<br>
+                    알파트릭스 감찰과는 이사회의 직속 기관으로 그룹의 내사를 담당해.<br>
+                    하지만 그들의 감찰은 진실보다 그룹의 이익을 우선하지.<br>
+                    <video width="640" height="360" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        이거 보이면 문제 있음
+                    </video>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" id="act1-info-1-2-link" onclick="toggleDiv('act1-info-1-2','act1-info-1-2-link','1-2')">닫기</a></span>
+                    <br><br><hr>
+                </div>
+
+            </div>
+
+            <div class="infoDiv" id="act2-info">
+            
+            </div>
+
+            <div class="infoDiv" id="act3-info">
+            
+            </div>
+        </div>
+
+        <div id="update-info">
+            <hr>
+            <span style="float:right;">last update : 04 / 13 / 2024</span>
+            <br><br>
+        </div>
+
+    </body>
+</html>

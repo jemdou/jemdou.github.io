@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="../css-countersideinfo.css"> <!-- 알맞게 수정할 것-->
+        <script src="../js-countersideinfo.js"></script> <!-- 알맞게 수정할 것-->
+
+        <title>
+            스토리 제목
+        </title>
+    </head>
+
+    <body onload="showInfoDivWithID('story-info')">
+        <div id="header">
+            <br>
+            <h2>스토리 제목</h2>
+            <hr><hr>
+        </div>
+        <div id="content">
+            <div id="side-panel">
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('story-info')">스토리 정보</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('act1-info')">ACT 1</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('act2-info')">ACT 2</a>
+                <hr>
+                <a href="#none" class="side-panel-button" onclick="showInfoDivWithID('act3-info')">ACT 3</a>
+            </div>
+
+            <div class="infoDiv" id="story-info">
+                서브(?) 제목
+                <h3>스토리 제목</h3>
+                - 정보들<br>
+                <br>
+                (구조를 모르겠다면 다른 스토리 html 파일 참조)
+            </div>
+
+            <div class="infoDiv" id="act1-info">
+                <!--
+                <hr> |
+                <a href="#none" class="side-panel-button" id="act1-info-#1-link" onclick="toggleDiv('act1-info-#1','act1-info-#1-link','#1')">+ #1</a> | 
+                <hr>
+                -->
+                <button onclick="toggleDiv('act1-info-#1','','')">#1</button>
+                <button onclick="toggleDiv('act1-info-#2','','')">#2</button>
+                <button onclick="toggleDiv('act1-info-1-1','','')">1-1</button>
+                <button onclick="toggleDiv('act1-info-1-2','','')">1-2</button>
+                <hr>
+
+                <div id="act1-info-#1" style="display:none;">
+                    [#1] 제목<br>
+                    설명<br>
+                    <video width="640" height="360" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        이거 보이면 문제 있음
+                    </video>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" id="act1-info-#1-link" onclick="toggleDiv('act1-info-#1','act1-info-#1-link','#1')">닫기</a></span>
+                    <br><br><hr>
+                </div>
+
+                <div id="act1-info-#2" style="display:none;">
+                    [#2] 제목<br>
+                    설명<br>
+                    <video width="640" height="360" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        이거 보이면 문제 있음
+                    </video>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" id="act1-info-#2-link" onclick="toggleDiv('act1-info-#2','act1-info-#2-link','#2')">닫기</a></span>
+                    <br><br><hr>
+                </div>
+
+                <div id="act1-info-1-1" style="display:none;">
+                    [1-1] 제목<br>
+                    설명<br>
+                    <video width="640" height="360" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        이거 보이면 문제 있음
+                    </video>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" id="act1-info-1-1-link" onclick="toggleDiv('act1-info-1-1','act1-info-1-1-link','1-1')">닫기</a></span>
+                    <br><br><hr>
+                </div>
+
+                <div id="act1-info-1-2" style="display:none;">
+                    [1-2] 제목<br>
+                    설명<br>
+                    <video width="640" height="360" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        이거 보이면 문제 있음
+                    </video>
+                    <span style="float:right;"><a href="#none" class="side-panel-button" id="act1-info-1-2-link" onclick="toggleDiv('act1-info-1-2','act1-info-1-2-link','1-2')">닫기</a></span>
+                    <br><br><hr>
+                </div>
+
+            </div>
+
+            <div class="infoDiv" id="act2-info">
+            
+            </div>
+
+            <div class="infoDiv" id="act3-info">
+            
+            </div>
+        </div>
+
+        <div id="update-info">
+            <hr>
+            <span style="float:right;">last update : 04 / 13 / 2024</span>
+            <br><br>
+        </div>
+
+    </body>
+</html>
