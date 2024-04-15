@@ -24,9 +24,9 @@ function toggleDiv(divID, linkID, linkName) {
 
     if(div.style.display == 'none') {
         div.style.display = '';
-        link.innerText = '- ' + linkName;
+        link.innerText = '▼ ' + linkName;
     } else {
         div.style.display = 'none';
-        link.innerText = '+ ' + linkName;
+        link.innerText = '▶ ' + linkName;
     }
 }
